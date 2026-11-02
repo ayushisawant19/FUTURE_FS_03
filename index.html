@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riwayat — Gifting, curated with love. | Luxury Bespoke Gift Hampers Pune</title>
+  <meta name="description" content="Riwayat is Pune's premier bespoke gifting atelier. Handcrafted luxury gift hampers for birthdays, weddings, anniversaries, baby showers, festivals, and corporate celebrations." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Riwayat — Gifting, curated with love." />
+  <meta property="og:description" content="Bespoke luxury gift hampers handcrafted in Pune with signature velvet keepsake boxes, silk ribbons, and wax-sealed calligraphy cards." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Luxury Serif) + Playfair Display + Plus Jakarta Sans + Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            burgundy: {
+              50: '#FAF2F4',
+              100: '#F5E4E8',
+              200: '#EBC9D1',
+              300: '#DDA3AF',
+              400: '#C77587',
+              500: '#A84C62',
+              600: '#8C354A',
+              700: '#6D1A2B', // Signature Royal Burgundy
+              800: '#54111F',
+              900: '#3D0915',
+              950: '#26040C',
+            },
+            gold: {
+              50: '#FDFCF6',
+              100: '#FAF7E6',
+              200: '#F3ECC4',
+              300: '#E9DC99',
+              400: '#DCC76A',
+              500: '#D4AF37', // Antique Gold
+              600: '#B88F23',
+              700: '#946E19',
+              800: '#755418',
+              900: '#5C4116',
+            },
+            ivory: {
+              50: '#FFFFFF',
+              100: '#FAF8F5', // Soft Silk Ivory
+              200: '#F5EFE8', // Warm Linen
+              300: '#ECE3D7',
+              400: '#DDCFC0',
+              500: '#C8B5A2',
+            },
+            blush: {
+              50: '#FCF8F9',
+              100: '#F8EFF2',
+              200: '#F2DFE5',
+              300: '#E6C6D0',
+              400: '#D5A4B4',
+              500: '#C07D94',
+            },
+            charcoal: {
+              900: '#151113',
+              800: '#231D20',
+              700: '#383034',
+              600: '#544A4F',
+              500: '#73686E',
+            }
+          },
+          fontFamily: {
+            cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            script: ['"Alex Brush"', 'cursive'],
+          },
+          boxShadow: {
+            'velvet': '0 20px 40px -15px rgba(61, 9, 21, 0.22), 0 8px 16px -6px rgba(212, 175, 55, 0.15)',
+            'velvet-sm': '0 10px 25px -10px rgba(61, 9, 21, 0.12), 0 4px 10px -2px rgba(212, 175, 55, 0.08)',
+            'gold-glow': '0 0 35px -5px rgba(212, 175, 55, 0.45)',
+            'inner-box': 'inset 0 2px 4px rgba(0,0,0,0.25), 0 15px 35px rgba(0,0,0,0.25)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #F5EFE8; }
+    ::-webkit-scrollbar-thumb { background: #C77587; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #6D1A2B; }
+
+    /* Luxury Gradients & Textures */
+    .bg-royal-burgundy {
+      background: linear-gradient(135deg, #54111F 0%, #6D1A2B 45%, #3D0915 100%);
+    }
+    .bg-gold-metallic {
+      background: linear-gradient(135deg, #F3ECC4 0%, #D4AF37 50%, #B88F23 100%);
+    }
+    .text-gold-metallic {
+      background: linear-gradient(135deg, #B88F23 0%, #D4AF37 40%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-burgundy-metallic {
+      background: linear-gradient(135deg, #8C354A 0%, #6D1A2B 50%, #3D0915 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .border-gold-subtle {
+      border: 1px solid rgba(212, 175, 55, 0.35);
+    }
+    .border-gold-glow {
+      border: 1px solid rgba(212, 175, 55, 0.6);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+    }
+
+    /* Subtle background watermark pattern */
+    .bg-linen-pattern {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(rgba(109, 26, 43, 0.03) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    /* Silk ribbon shimmer animation */
+    @keyframes ribbonShine {
+      0% { transform: translateX(-150%) skewX(-20deg); }
+      100% { transform: translateX(250%) skewX(-20deg); }
+    }
+    .animate-ribbon-shine {
+      animation: ribbonShine 4s infinite ease-in-out;
+    }
+
+    /* Arch frame masking */
+    .arch-frame {
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-linen-pattern text-charcoal-800 font-sans antialiased selection:bg-burgundy-100 selection:text-burgundy-900">
+
+  <!-- TOP LUXURY ANNOUNCEMENT BAR & FESTIVAL COUNTDOWN -->
+  <aside aria-label="Announcement" class="bg-royal-burgundy text-ivory-100 py-2.5 px-4 text-xs tracking-wide shadow-md border-b border-gold-500/30">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2.5 text-center md:text-left">
+      
+      <div class="flex items-center gap-2 justify-center">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-gold-500/20 text-gold-300 border border-gold-400/40 tracking-wider uppercase">
+          <i class="fa-solid fa-sparkles text-[9px] text-gold-400"></i> Pune Atelier
+        </span>
+        <span class="font-cormorant text-sm sm:text-base font-semibold tracking-wide text-ivory-100">
+          Diwali, Wedding & Festive Orders Open • Chauffeured Across Pune
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1 text-[11px] font-mono text-gold-300 font-bold">
+          <span class="text-ivory-300 text-[11px] font-sans mr-1 font-normal opacity-80">Slots Close In:</span>
+          <span class="bg-black/40 px-2 py-0.5 rounded-md border border-gold-400/25" id="cd-days">09</span>d
+          <span class="bg-black/40 px-2 py-0.5 rounded-md border border-gold-400/25" id="cd-hours">14</span>h
+          <span class="bg-black/40 px-2 py-0.5 rounded-md border border-gold-400/25" id="cd-mins">32</span>m
+          <span class="bg-black/40 px-2 py-0.5 rounded-md border border-gold-400/25" id="cd-secs">48</span>s
+        </div>
+
+        <span class="text-gold-500/50 hidden sm:inline">|</span>
+
+        <button onclick="openPitchModal()" class="text-[11px] font-semibold text-gold-200 hover:text-white transition flex items-center gap-1">
+          <i class="fa-solid fa-file-signature text-gold-400"></i>
+          <span>Pitch Explanation</span>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- LUXURY FLOATING SOCIAL PROOF TICKER -->
+  <div id="live-order-toast" class="fixed bottom-6 left-6 z-40 bg-white/95 backdrop-blur-md rounded-2xl shadow-velvet border border-gold-400/30 p-3.5 pr-5 max-w-sm hidden sm:flex items-center gap-3.5 transition-all duration-500 transform translate-y-0">
+    <div class="w-11 h-11 rounded-full bg-burgundy-50 border border-burgundy-200 flex-shrink-0 flex items-center justify-center text-burgundy-700">
+      <i class="fa-solid fa-gift"></i>
+    </div>
+    <div class="text-xs">
+      <p class="font-bold text-burgundy-950 font-serif" id="toast-title">Radhika from Koregaon Park</p>
+      <p class="text-charcoal-500 text-[11px]" id="toast-desc">Just enquired about The Royale Velvet Keepsake</p>
+    </div>
+    <button onclick="document.getElementById('live-order-toast').remove()" class="text-charcoal-400 hover:text-charcoal-700 ml-2">
+      <i class="fa-solid fa-xmark text-xs"></i>
+    </button>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-ivory-100/95 backdrop-blur-md border-b border-ivory-300 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-full bg-royal-burgundy flex items-center justify-center shadow-md group-hover:scale-105 transition duration-300 border border-gold-400/50">
+          <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"></polyline>
+            <rect x="2" y="7" width="20" height="5"></rect>
+            <line x1="12" y1="22" x2="12" y2="7"></line>
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="font-cormorant text-3xl font-bold tracking-tight text-burgundy-900 block leading-none">
+            Riwayat
+          </span>
+          <span class="font-script text-sm text-gold-600 block tracking-wider">
+            Gifting, curated with love.
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-charcoal-700">
+        <a href="#collections" class="hover:text-burgundy-700 transition">Collections</a>
+        <a href="#occasions" class="hover:text-burgundy-700 transition">Occasions</a>
+        <a href="#wrapping-preview" class="hover:text-burgundy-700 transition">Gift Wrapping</a>
+        <a href="#build-hamper" class="text-burgundy-800 font-bold hover:text-burgundy-900 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-wand-magic-sparkles text-gold-600"></i> Build Hamper
+        </a>
+        <a href="#gift-finder" class="hover:text-burgundy-700 transition">Gift Finder</a>
+        <a href="#our-story" class="hover:text-burgundy-700 transition">Our Story</a>
+        <a href="#reviews" class="hover:text-burgundy-700 transition">Reviews</a>
+        <a href="#contact" class="hover:text-burgundy-700 transition">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://ig.me/m/riwayat_placeholder" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-burgundy-300/80 bg-blush-50 text-burgundy-800 font-semibold text-xs hover:bg-blush-100 transition shadow-sm">
+          <i class="fa-brands fa-instagram text-burgundy-700 text-sm"></i>
+          <span>Instagram DM</span>
+        </a>
+
+        <button onclick="openEnquiryModal()" 
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-royal-burgundy text-ivory-100 font-semibold text-xs hover:shadow-velvet transition border border-gold-400/50 group">
+          <i class="fa-solid fa-feather-pointed text-gold-400 group-hover:scale-110 transition"></i>
+          <span>Enquire Now</span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl text-burgundy-900 hover:bg-ivory-200 focus:outline-none" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-ivory-100 border-b border-ivory-300 px-6 py-5 space-y-4">
+      <div class="flex flex-col space-y-3.5 text-sm font-semibold uppercase tracking-wider text-charcoal-800">
+        <a href="#collections" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Collections</a>
+        <a href="#occasions" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Shop by Occasion</a>
+        <a href="#wrapping-preview" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Gift Wrapping Preview</a>
+        <a href="#build-hamper" onclick="toggleMobileMenu()" class="text-burgundy-700 font-bold flex items-center gap-2">
+          <i class="fa-solid fa-wand-magic-sparkles text-gold-600"></i> Build Your Own Hamper
+        </a>
+        <a href="#gift-finder" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Gift Finder Quiz</a>
+        <a href="#our-story" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Our Story & Craft</a>
+        <a href="#reviews" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Client Reviews</a>
+        <a href="#faqs" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">FAQs & Pune Delivery</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-burgundy-700">Contact Atelier</a>
+      </div>
+      <div class="pt-4 border-t border-ivory-300 flex flex-col gap-2.5">
+        <a href="https://ig.me/m/riwayat_placeholder" target="_blank" class="w-full text-center py-3 px-4 rounded-xl border border-burgundy-300 text-burgundy-800 font-semibold text-xs bg-blush-50">
+          <i class="fa-brands fa-instagram mr-1.5 text-burgundy-700"></i> Message on Instagram (@riwayat_placeholder)
+        </a>
+        <button onclick="toggleMobileMenu(); openEnquiryModal();" class="w-full text-center py-3 px-4 rounded-xl bg-royal-burgundy text-white font-semibold text-xs shadow-md">
+          <i class="fa-solid fa-paper-plane mr-1.5 text-gold-300"></i> Submit Bespoke Enquiry
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="relative overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-28">
+      <!-- Ambient Luxury Backing Glows -->
+      <div class="absolute -top-10 right-0 w-[500px] h-[500px] bg-blush-200/40 rounded-full blur-[100px] -z-10"></div>
+      <div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-gold-200/30 rounded-full blur-[90px] -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 border border-gold-400/40 shadow-sm text-xs font-semibold text-burgundy-900 tracking-wider">
+              <span class="w-2 h-2 rounded-full bg-gold-500 animate-ping"></span>
+              <span class="uppercase text-[11px] font-bold">Pune's Bespoke Gifting Atelier</span>
+              <span class="text-charcoal-400">•</span>
+              <span class="font-script text-base text-gold-700 capitalize">Curated with love</span>
+            </div>
+
+            <h1 class="font-cormorant text-5xl sm:text-6xl lg:text-7xl font-bold text-burgundy-950 tracking-tight leading-[1.05]">
+              Curated with Love, <br class="hidden sm:inline" />
+              Wrapped in <span class="italic font-normal font-cormorant text-gold-600 underline decoration-gold-300/60 decoration-wavy underline-offset-8">Royal Elegance.</span>
+            </h1>
+
+            <p class="text-charcoal-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-sans font-light">
+              Elevate every celebration into an unforgettable memory. Riwayat crafts bespoke luxury gift hampers encased in keepsake velvet trunks, adorned with hand-tied coordinated silk ribbons, and sealed with deckle-edged calligraphy letters—chauffeured directly across Pune.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#collections" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-royal-burgundy text-ivory-100 font-semibold text-xs tracking-wider uppercase hover:shadow-velvet transition border border-gold-400/50 group">
+                <span>Explore Signature Hampers</span>
+                <i class="fa-solid fa-arrow-right text-gold-300 group-hover:translate-x-1.5 transition duration-300"></i>
+              </a>
+
+              <a href="https://ig.me/m/riwayat_placeholder" target="_blank" rel="noopener noreferrer" 
+                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-white text-burgundy-900 font-semibold text-xs tracking-wider uppercase hover:bg-blush-50 transition border border-burgundy-300/80 shadow-sm">
+                <i class="fa-brands fa-instagram text-burgundy-700 text-sm"></i>
+                <span>Message on Instagram</span>
+              </a>
+
+              <button onclick="openEnquiryModal('custom_hamper')" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-gold-500/10 text-gold-800 font-semibold text-xs tracking-wider uppercase hover:bg-gold-500/20 transition border border-gold-400/40">
+                <i class="fa-solid fa-wand-magic-sparkles text-gold-600"></i>
+                <span>Custom Curation</span>
+              </button>
+            </div>
+
+            <!-- Trust Strip Badges -->
+            <div class="pt-6 border-t border-ivory-300/90 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-charcoal-600">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-burgundy-700"></i>
+                <span>Personal Chauffeured Pune Delivery</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-ribbon text-gold-600"></i>
+                <span>Signature Silk & Velvet Bows</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-burgundy-700"></i>
+                <span>Notice: Min 2 Days • Ideally 7+</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Image Arched Showcase -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Subtle gold halo ring -->
+              <div class="absolute -inset-3 bg-gradient-to-r from-gold-400/25 to-burgundy-400/25 rounded-[36px] blur-xl -z-10"></div>
+              
+              <!-- Main Feature Card with Arched Window -->
+              <div class="rounded-[32px] overflow-hidden bg-white shadow-velvet border border-gold-400/40 relative">
+                
+                <div class="relative h-88 sm:h-96 w-full overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=1000&auto=format&fit=crop" 
+                       alt="The Royale Velvet Keepsake Hamper by Riwayat Pune" 
+                       class="w-full h-full object-cover transform hover:scale-105 transition duration-700" />
+                  
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                  <!-- Floating Crown Badge -->
+                  <div class="absolute top-4 left-4 bg-burgundy-900/95 backdrop-blur-md text-gold-300 text-[11px] px-3.5 py-1.5 rounded-full border border-gold-400/40 font-semibold shadow flex items-center gap-1.5">
+                    <i class="fa-solid fa-crown text-gold-400"></i> Customer Favourite
+                  </div>
+
+                  <!-- Price on Enquiry Pill -->
+                  <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md text-burgundy-900 text-xs px-3.5 py-1.5 rounded-full font-bold shadow border border-burgundy-200">
+                    Enquire for price
+                  </div>
+
+                  <!-- Overlay Bottom Details -->
+                  <div class="absolute bottom-4 left-5 right-5 text-white">
+                    <span class="text-[10px] tracking-widest uppercase text-gold-300 font-semibold">Signature Pune Creation</span>
+                    <h3 class="font-cormorant text-2xl font-bold">The Royale Velvet Keepsake</h3>
+                    <p class="text-xs text-ivory-200 font-light line-clamp-1 mt-0.5">Handcrafted burgundy velvet trunk, Belgian truffles, rose oud soy candle & wax calligraphy.</p>
+                  </div>
+                </div>
+
+                <!-- Footer Bar -->
+                <div class="p-4 bg-ivory-100 flex items-center justify-between border-t border-ivory-200">
+                  <div class="flex items-center gap-1.5 text-xs text-charcoal-700">
+                    <div class="flex text-gold-500 text-[11px]">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="font-bold text-burgundy-950">5.0</span>
+                    <span class="text-charcoal-500">(38 Pune reviews)</span>
+                  </div>
+
+                  <button onclick="openEnquiryModal('standard', 'The Royale Velvet Keepsake')" class="text-xs font-bold text-burgundy-700 hover:text-burgundy-900 flex items-center gap-1.5 group">
+                    <span>Enquire About This Gift</span>
+                    <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition"></i>
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- Floating Micro-Badge -->
+              <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-velvet border border-gold-400/30 flex items-center gap-3.5">
+                <div class="w-11 h-11 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center text-lg flex-shrink-0">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-burgundy-900 font-serif">100% Curated with Love</p>
+                  <p class="text-[11px] text-charcoal-500">Koregaon Park • Baner • Kothrud</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="border-y border-ivory-300 bg-white/80 backdrop-blur-sm py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory-100/60 border border-ivory-200">
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-50 border border-burgundy-200/50 flex-shrink-0 flex items-center justify-center text-burgundy-700 text-xl">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+            <div>
+              <h4 class="font-cormorant font-bold text-lg text-burgundy-950">Artisanal Packaging</h4>
+              <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">Keepsake rigid trunks, coordinated silk ribbons, and hand-poured custom wax seals.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory-100/60 border border-ivory-200">
+            <div class="w-12 h-12 rounded-2xl bg-gold-50 border border-gold-200 flex-shrink-0 flex items-center justify-center text-gold-700 text-xl">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div>
+              <h4 class="font-cormorant font-bold text-lg text-burgundy-950">Hand-Delivered in Pune</h4>
+              <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">Direct personal delivery in scheduled 3–4 hr slots. Charges calculated by distance.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory-100/60 border border-ivory-200">
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 border border-blush-300/50 flex-shrink-0 flex items-center justify-center text-burgundy-800 text-xl">
+              <i class="fa-solid fa-feather"></i>
+            </div>
+            <div>
+              <h4 class="font-cormorant font-bold text-lg text-burgundy-950">Calligraphy Note Cards</h4>
+              <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">Deckle-edged cotton paper hand-inscribed with your personal message for the recipient.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-4 rounded-2xl bg-ivory-100/60 border border-ivory-200">
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-50 border border-burgundy-200/50 flex-shrink-0 flex items-center justify-center text-burgundy-700 text-xl">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <div>
+              <h4 class="font-cormorant font-bold text-lg text-burgundy-950">Bespoke Customization</h4>
+              <p class="text-xs text-charcoal-600 mt-1 leading-relaxed">Tailored to your budget, dietary requirements, color theme, and personal quirks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEASONAL FESTIVAL EDIT BANNER -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="rounded-[32px] overflow-hidden bg-royal-burgundy text-ivory-100 relative p-8 sm:p-14 shadow-velvet border border-gold-400/40">
+        
+        <div class="absolute right-0 top-0 bottom-0 w-1/2 opacity-25 pointer-events-none hidden lg:block">
+          <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=800&auto=format&fit=crop" alt="Festive Diwali Hamper by Riwayat" class="w-full h-full object-cover" />
+        </div>
+        
+        <div class="max-w-xl space-y-4 relative z-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-semibold border border-gold-400/30">
+            <i class="fa-solid fa-sparkles text-gold-400"></i> Limited Festive Edition
+          </div>
+          
+          <h2 class="font-cormorant text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+            The Royal Festive & Diwali Edit
+          </h2>
+          
+          <p class="text-ivory-200 text-sm sm:text-base leading-relaxed font-light">
+            Illuminate celebrations with handcrafted pure brass peacock diyas, Kashmiri organic saffron, wild forest honey, and royal velvet sweet trunks. Slots strictly capped to ensure bespoke finish.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-3">
+            <button onclick="filterHampers('festivals')" class="px-7 py-3.5 rounded-full bg-gold-500 text-burgundy-950 font-bold text-xs uppercase tracking-wider hover:bg-gold-400 transition shadow">
+              Explore Festive Hampers
+            </button>
+            <a href="https://wa.me/919876543210?text=Hi%20Riwayat!%20I'd%20like%20to%20reserve%20a%20Diwali%20Festive%20Hamper." target="_blank" 
+               class="px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/20 transition flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+              <span>Reserve on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SHOP BY OCCASION TILES -->
+    <section id="occasions" class="py-14 bg-ivory-100/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span class="font-script text-2xl text-gold-600">Thoughtful Curation</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">Shop by Occasion</h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 font-light">Find the quintessential hamper designed for your loved ones' milestones.</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          
+          <button onclick="filterHampers('birthday')" class="group p-6 rounded-3xl bg-white border border-ivory-300 hover:border-gold-400 transition duration-300 shadow-sm hover:shadow-velvet-sm text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-blush-100 text-burgundy-700 flex items-center justify-center text-xl mb-3.5 group-hover:scale-110 transition">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-lg text-charcoal-900 group-hover:text-burgundy-700">Birthdays</h4>
+            <span class="text-[11px] text-charcoal-500">Celebrate Them</span>
+          </button>
+
+          <button onclick="filterHampers('anniversary')" class="group p-6 rounded-3xl bg-white border border-ivory-300 hover:border-gold-400 transition duration-300 shadow-sm hover:shadow-velvet-sm text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-blush-100 text-burgundy-700 flex items-center justify-center text-xl mb-3.5 group-hover:scale-110 transition">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-lg text-charcoal-900 group-hover:text-burgundy-700">Anniversaries</h4>
+            <span class="text-[11px] text-charcoal-500">Love & Romance</span>
+          </button>
+
+          <button onclick="filterHampers('wedding')" class="group p-6 rounded-3xl bg-white border border-ivory-300 hover:border-gold-400 transition duration-300 shadow-sm hover:shadow-velvet-sm text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-gold-100 text-gold-700 flex items-center justify-center text-xl mb-3.5 group-hover:scale-110 transition">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-lg text-charcoal-900 group-hover:text-burgundy-700">Weddings</h4>
+            <span class="text-[11px] text-charcoal-500">Trousseau & Favors</span>
+          </button>
+
+          <button onclick="filterHampers('baby-shower')" class="group p-6 rounded-3xl bg-white border border-ivory-300 hover:border-gold-400 transition duration-300 shadow-sm hover:shadow-velvet-sm text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-blush-100 text-burgundy-700 flex items-center justify-center text-xl mb-3.5 group-hover:scale-110 transition">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-lg text-charcoal-900 group-hover:text-burgundy-700">Baby Showers</h4>
+            <span class="text-[11px] text-charcoal-500">Little Blessings</span>
+          </button>
+
+          <button onclick="filterHampers('festivals')" class="group p-6 rounded-3xl bg-white border border-ivory-300 hover:border-gold-400 transition duration-300 shadow-sm hover:shadow-velvet-sm text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-gold-100 text-gold-700 flex items-center justify-center text-xl mb-3.5 group-hover:scale-110 transition">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-lg text-charcoal-900 group-hover:text-burgundy-700">Festivals</h4>
+            <span class="text-[11px] text-charcoal-500">Diwali, Rakhi & More</span>
+          </button>
+
+          <button onclick="filterHampers('corporate')" class="group p-6 rounded-3xl bg-white border border-ivory-300 hover:border-gold-400 transition duration-300 shadow-sm hover:shadow-velvet-sm text-center flex flex-col items-center">
+            <div class="w-14 h-14 rounded-2xl bg-charcoal-100 text-charcoal-700 flex items-center justify-center text-xl mb-3.5 group-hover:scale-110 transition">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-lg text-charcoal-900 group-hover:text-burgundy-700">Corporate</h4>
+            <span class="text-[11px] text-charcoal-500">Client & Executive</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE COLLECTIONS / PRODUCT CATALOG -->
+    <section id="collections" class="py-16 bg-white border-t border-ivory-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="font-script text-2xl text-gold-600">The Atelier Catalog</span>
+            <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">Curated Hampers</h2>
+            <p class="text-xs sm:text-sm text-charcoal-600 mt-1 font-light">All hampers are crafted bespoke with your choice of ribbon colors and personalized details.</p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap gap-2 text-xs font-semibold">
+            <button onclick="filterHampers('all')" id="tab-all" class="category-tab px-4 py-2 rounded-full bg-burgundy-700 text-white shadow-sm transition">
+              All Creations
+            </button>
+            <button onclick="filterHampers('favourites')" id="tab-favourites" class="category-tab px-4 py-2 rounded-full bg-ivory-200 text-charcoal-700 hover:bg-ivory-300 transition">
+              <i class="fa-solid fa-crown text-gold-600 mr-1"></i> Customer Favourites
+            </button>
+            <button onclick="filterHampers('romantic')" id="tab-romantic" class="category-tab px-4 py-2 rounded-full bg-ivory-200 text-charcoal-700 hover:bg-ivory-300 transition">
+              <i class="fa-solid fa-heart text-burgundy-500 mr-1"></i> Partner & Romantic
+            </button>
+            <button onclick="filterHampers('festivals')" id="tab-festivals" class="category-tab px-4 py-2 rounded-full bg-ivory-200 text-charcoal-700 hover:bg-ivory-300 transition">
+              Festive & Diwali
+            </button>
+            <button onclick="filterHampers('wedding')" id="tab-wedding" class="category-tab px-4 py-2 rounded-full bg-ivory-200 text-charcoal-700 hover:bg-ivory-300 transition">
+              Wedding & Trousseau
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Dynamically populated via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE GIFT-WRAPPING VISUAL PREVIEW -->
+    <section id="wrapping-preview" class="py-18 bg-gradient-to-b from-ivory-100 to-blush-50/50 border-t border-ivory-300">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-100 text-gold-800 text-xs font-semibold border border-gold-300">
+            <i class="fa-solid fa-eye text-gold-600"></i> Interactive Atelier Feature
+          </div>
+          <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">The Signature Wrapping Preview</h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 font-light">Every Riwayat hamper is crowned with hand-tied coordinated silk ribbons and bespoke box finishes. Toggle your selections below for a real-time visual preview.</p>
+        </div>
+
+        <div class="bg-white rounded-[32px] p-6 sm:p-12 shadow-velvet border border-gold-400/40 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <!-- Live Interactive 3D Hamper Mockup -->
+          <div class="md:col-span-6 flex flex-col items-center justify-center p-8 bg-gradient-to-br from-ivory-100 via-ivory-200 to-blush-100/50 rounded-3xl border border-ivory-300 relative overflow-hidden min-h-[360px]">
+            
+            <!-- Box Shadow Floor Ring -->
+            <div class="w-60 h-10 bg-black/15 rounded-full blur-md absolute bottom-12"></div>
+
+            <!-- 3D Box Mockup -->
+            <div id="preview-box" class="w-64 h-64 rounded-3xl shadow-2xl relative transition-all duration-500 flex flex-col items-center justify-center border-2 border-gold-400/60 overflow-hidden transform hover:-translate-y-1" style="background-color: #6D1A2B;">
+              
+              <!-- Subtle Velvet Lighting Sheen -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-white/20 pointer-events-none"></div>
+
+              <!-- Vertical Silk Ribbon -->
+              <div id="preview-ribbon-v" class="absolute w-10 h-full shadow-lg transition-all duration-300 flex items-center justify-center" style="background-color: #D4AF37;">
+                <div class="w-0.5 h-full bg-white/30"></div>
+              </div>
+              
+              <!-- Horizontal Silk Ribbon -->
+              <div id="preview-ribbon-h" class="absolute h-10 w-full shadow-lg transition-all duration-300 flex items-center justify-center" style="background-color: #D4AF37;">
+                <div class="h-0.5 w-full bg-white/30"></div>
+              </div>
+
+              <!-- Center Ribbon Bow -->
+              <div id="preview-bow" class="relative z-10 w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl shadow-velvet border-2 border-white/50 transition-all duration-300 transform hover:scale-105" style="background-color: #B88F23;">
+                <i class="fa-solid fa-ribbon"></i>
+              </div>
+
+              <!-- Metallic Wax Seal Emblem -->
+              <div id="preview-wax-seal" class="absolute -bottom-3 right-5 z-20 w-12 h-12 rounded-full flex items-center justify-center text-gold-300 text-sm shadow-xl border border-gold-400/80 transition-all duration-300" style="background-color: #3D0915;">
+                <i class="fa-solid fa-stamp"></i>
+              </div>
+
+              <!-- Box Inscription -->
+              <span id="preview-box-label" class="absolute top-4 text-[10px] font-cormorant font-bold tracking-widest uppercase text-ivory-100 opacity-90">
+                Riwayat Pune
+              </span>
+            </div>
+
+            <!-- Current Selection Summary -->
+            <p id="preview-summary-text" class="mt-8 text-xs text-charcoal-700 font-medium text-center bg-white/95 backdrop-blur-sm px-5 py-2 rounded-full border border-ivory-300 shadow-sm">
+              Selected: <strong class="text-burgundy-900 font-serif">Royal Burgundy Velvet</strong> box with <strong class="text-gold-700 font-serif">Antique Gold Satin</strong> ribbon
+            </p>
+          </div>
+
+          <!-- Controls -->
+          <div class="md:col-span-6 space-y-6">
+            
+            <!-- Box Style Selector -->
+            <div>
+              <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-2.5">
+                1. Select Keepsake Box Finish
+              </label>
+              <div class="grid grid-cols-2 gap-2.5 text-xs font-medium">
+                <button onclick="setWrapBox('#6D1A2B', 'Royal Burgundy Velvet', '#3D0915')" class="box-btn p-3.5 rounded-2xl border-2 border-burgundy-700 bg-burgundy-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-burgundy-700 border-2 border-white shadow-sm"></span>
+                  <span class="font-bold text-burgundy-900">Royal Burgundy</span>
+                </button>
+                <button onclick="setWrapBox('#FAF6F0', 'Warm Ivory Matte', '#6D1A2B')" class="box-btn p-3.5 rounded-2xl border border-ivory-300 bg-white hover:bg-ivory-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-[#FAF6F0] border border-charcoal-300 shadow-sm"></span>
+                  <span>Warm Ivory Matte</span>
+                </button>
+                <button onclick="setWrapBox('#231D20', 'Espresso Charcoal Chest', '#151113')" class="box-btn p-3.5 rounded-2xl border border-ivory-300 bg-white hover:bg-ivory-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-[#231D20] border border-white shadow-sm"></span>
+                  <span>Espresso Chest</span>
+                </button>
+                <button onclick="setWrapBox('#8B5A2B', 'Artisanal Wooden Trunk', '#54111F')" class="box-btn p-3.5 rounded-2xl border border-ivory-300 bg-white hover:bg-ivory-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-[#8B5A2B] border border-white shadow-sm"></span>
+                  <span>Wooden Trunk</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Ribbon Color Selector -->
+            <div>
+              <label class="block text-xs font-bold text-charcoal-800 uppercase tracking-wider mb-2.5">
+                2. Select Coordinated Silk Ribbon
+              </label>
+              <div class="grid grid-cols-2 gap-2.5 text-xs font-medium">
+                <button onclick="setWrapRibbon('#D4AF37', 'Antique Gold Satin', '#B88F23')" class="ribbon-btn p-3.5 rounded-2xl border-2 border-gold-500 bg-gold-50/50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-gold-500 border-2 border-white shadow-sm"></span>
+                  <span class="font-bold text-gold-900">Antique Gold Satin</span>
+                </button>
+                <button onclick="setWrapRibbon('#8C354A', 'Crimson Silk', '#6D1A2B')" class="ribbon-btn p-3.5 rounded-2xl border border-ivory-300 bg-white hover:bg-ivory-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-[#8C354A] border border-white shadow-sm"></span>
+                  <span>Crimson Silk</span>
+                </button>
+                <button onclick="setWrapRibbon('#E6C6D0', 'Blush Rose Satin', '#D5A4B4')" class="ribbon-btn p-3.5 rounded-2xl border border-ivory-300 bg-white hover:bg-ivory-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-[#E6C6D0] border border-charcoal-300 shadow-sm"></span>
+                  <span>Blush Rose Satin</span>
+                </button>
+                <button onclick="setWrapRibbon('#1C4937', 'Emerald Velvet', '#123326')" class="ribbon-btn p-3.5 rounded-2xl border border-ivory-300 bg-white hover:bg-ivory-50 text-left flex items-center gap-3 transition">
+                  <span class="w-5 h-5 rounded-full bg-[#1C4937] border border-white shadow-sm"></span>
+                  <span>Emerald Velvet</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <button onclick="applyWrapToEnquiry()" class="w-full py-3.5 rounded-full bg-royal-burgundy text-ivory-100 font-semibold text-xs uppercase tracking-wider hover:shadow-velvet transition flex items-center justify-center gap-2.5">
+                <i class="fa-solid fa-check text-gold-300"></i>
+                <span>Use This Packaging Style in My Enquiry</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILD YOUR OWN HAMPER (GUIDED MULTI-STEP BUILDER) -->
+    <section id="build-hamper" class="py-16 bg-white border-t border-ivory-300">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span class="font-script text-2xl text-gold-600">Tailored to Perfection</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">Build Your Own Hamper</h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 font-light">Have a unique vision? Pick every element—from gourmet chocolates and blooms to keepsake frames and handwritten calligraphy cards.</p>
+        </div>
+
+        <div class="bg-ivory-100 rounded-[32px] p-6 sm:p-12 border border-gold-400/40 shadow-velvet">
+          
+          <!-- Stepper Progress Bar -->
+          <div class="flex items-center justify-between mb-10 relative">
+            <div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-1 bg-ivory-300 -z-0"></div>
+            <div id="step-progress-line" class="absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-burgundy-700 transition-all duration-300 -z-0" style="width: 25%;"></div>
+
+            <div class="relative z-10 flex flex-col items-center">
+              <div id="step-dot-1" class="w-10 h-10 rounded-full bg-burgundy-700 text-white flex items-center justify-center text-xs font-bold shadow-md">1</div>
+              <span class="text-[11px] font-semibold text-burgundy-900 mt-1.5 hidden sm:block">Recipient</span>
+            </div>
+            <div class="relative z-10 flex flex-col items-center">
+              <div id="step-dot-2" class="w-10 h-10 rounded-full bg-ivory-300 text-charcoal-600 flex items-center justify-center text-xs font-bold shadow">2</div>
+              <span class="text-[11px] font-semibold text-charcoal-500 mt-1.5 hidden sm:block">Theme</span>
+            </div>
+            <div class="relative z-10 flex flex-col items-center">
+              <div id="step-dot-3" class="w-10 h-10 rounded-full bg-ivory-300 text-charcoal-600 flex items-center justify-center text-xs font-bold shadow">3</div>
+              <span class="text-[11px] font-semibold text-charcoal-500 mt-1.5 hidden sm:block">Items</span>
+            </div>
+            <div class="relative z-10 flex flex-col items-center">
+              <div id="step-dot-4" class="w-10 h-10 rounded-full bg-ivory-300 text-charcoal-600 flex items-center justify-center text-xs font-bold shadow">4</div>
+              <span class="text-[11px] font-semibold text-charcoal-500 mt-1.5 hidden sm:block">Review</span>
+            </div>
+          </div>
+
+          <!-- STEP 1: Recipient & Occasion -->
+          <div id="builder-step-1" class="builder-step space-y-6">
+            <h3 class="font-cormorant text-2xl font-bold text-burgundy-950 border-b border-ivory-300 pb-2">Step 1: Who is this special gift for?</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1.5">Select Occasion</label>
+                <select id="byo-occasion" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                  <option value="Birthday">Birthday Celebration</option>
+                  <option value="Anniversary">Wedding Anniversary</option>
+                  <option value="Wedding / Engagement">Wedding / Engagement</option>
+                  <option value="Baby Shower">Baby Shower / Newborn</option>
+                  <option value="Festive (Diwali, Rakhi)">Festivals (Diwali, Rakhi, Eid)</option>
+                  <option value="Corporate / Thank You">Corporate Appreciation / Farewell</option>
+                  <option value="Just Because / Romantic">Romantic Surprise / Just Because</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1.5">Recipient</label>
+                <select id="byo-recipient" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                  <option value="Partner / Wife / Girlfriend">For Her (Wife, Girlfriend, Fiancée)</option>
+                  <option value="Partner / Husband / Boyfriend">For Him (Husband, Boyfriend)</option>
+                  <option value="Parents">Parents / In-Laws</option>
+                  <option value="Best Friend">Best Friend</option>
+                  <option value="Sibling">Brother / Sister</option>
+                  <option value="Colleague / Mentor">Colleague / Boss / Client</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex justify-end pt-4">
+              <button onclick="goToBuilderStep(2)" class="px-7 py-3 rounded-full bg-royal-burgundy text-white font-semibold text-xs tracking-wider uppercase hover:shadow-velvet transition flex items-center gap-2">
+                <span>Next: Budget & Theme</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Budget & Theme -->
+          <div id="builder-step-2" class="builder-step hidden space-y-6">
+            <h3 class="font-cormorant text-2xl font-bold text-burgundy-950 border-b border-ivory-300 pb-2">Step 2: Choose Budget Bracket & Color Theme</h3>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1.5">Approximate Budget Bracket (Pune Delivery)</label>
+                <select id="byo-budget" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                  <option value="₹2,500 – ₹4,500">₹2,500 – ₹4,500 (Petite Keepsake)</option>
+                  <option value="₹4,500 – ₹7,500" selected>₹4,500 – ₹7,500 (Signature Luxury Trunk)</option>
+                  <option value="₹7,500 – ₹12,000">₹7,500 – ₹12,000 (Grand Milestone Suite)</option>
+                  <option value="₹12,000+">₹12,000+ (Royal Heirloom Chest)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1.5">Color Palette Theme</label>
+                <select id="byo-theme" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                  <option value="Royal Burgundy & Antique Gold">Royal Burgundy & Antique Gold (Signature)</option>
+                  <option value="Warm Ivory & Soft Blush">Warm Ivory & Soft Blush</option>
+                  <option value="Pastel Sage & Cream">Pastel Sage & Cream</option>
+                  <option value="Espresso Charcoal & Gold">Espresso Charcoal & Brushed Gold (Masculine/Corporate)</option>
+                  <option value="Festive Saffron & Marigold">Festive Saffron & Royal Maroon</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex justify-between pt-4">
+              <button onclick="goToBuilderStep(1)" class="px-6 py-2.5 rounded-full border border-charcoal-300 text-charcoal-700 text-xs font-semibold hover:bg-white transition">
+                <i class="fa-solid fa-arrow-left mr-1"></i> Back
+              </button>
+              <button onclick="goToBuilderStep(3)" class="px-7 py-3 rounded-full bg-royal-burgundy text-white font-semibold text-xs tracking-wider uppercase hover:shadow-velvet transition flex items-center gap-2">
+                <span>Next: Pick Items & Keepsakes</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Pick Items & Add-ons -->
+          <div id="builder-step-3" class="builder-step hidden space-y-6">
+            <h3 class="font-cormorant text-2xl font-bold text-burgundy-950 border-b border-ivory-300 pb-2">Step 3: What items would you like inside?</h3>
+            <p class="text-xs text-charcoal-600 font-light">Select all that apply. Riwayat will curate high-grade artisanal elements according to your choices.</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-xs">
+              
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Belgian Cocoa Truffles" checked class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Belgian Cocoa Truffles</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Rose Scented Candle" checked class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Rose Scented Candle</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Fresh Exotic Roses / Blooms" class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Fresh Roses / Blooms</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Preserved Forever Rose" class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Forever Rose Dome</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Plush Velvet Teddy Bear" class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Plush Teddy Bear</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Custom Helium Confetti Balloon" class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Helium Bubble Balloon</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Personalized Polaroid Prints" class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Polaroid Accordion</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Gourmet Roasted Dry Fruits" class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Gourmet Dry Fruits</span>
+              </label>
+
+              <label class="p-3.5 rounded-2xl border border-ivory-300 bg-white flex items-center gap-3 cursor-pointer hover:border-gold-400 transition shadow-sm">
+                <input type="checkbox" name="byo-items" value="Handwritten Calligraphy Card" checked class="rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span class="font-medium text-charcoal-800">Wax-Sealed Card</span>
+              </label>
+
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-charcoal-700 mb-1">Personal Message for the Calligraphy Card</label>
+              <textarea id="byo-card-message" rows="2" placeholder="Write your heartfelt message here. We will inscribe it in elegant calligraphy." 
+                        class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none"></textarea>
+            </div>
+
+            <div class="flex justify-between pt-4">
+              <button onclick="goToBuilderStep(2)" class="px-6 py-2.5 rounded-full border border-charcoal-300 text-charcoal-700 text-xs font-semibold hover:bg-white transition">
+                <i class="fa-solid fa-arrow-left mr-1"></i> Back
+              </button>
+              <button onclick="goToBuilderStep(4)" class="px-7 py-3 rounded-full bg-royal-burgundy text-white font-semibold text-xs tracking-wider uppercase hover:shadow-velvet transition flex items-center gap-2">
+                <span>Next: Review & Submit</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 4: Review & Submit Enquiry -->
+          <div id="builder-step-4" class="builder-step hidden space-y-6">
+            <h3 class="font-cormorant text-2xl font-bold text-burgundy-950 border-b border-ivory-300 pb-2">Step 4: Your Custom Hamper Summary</h3>
+            
+            <div id="byo-summary-box" class="p-6 rounded-2xl bg-white border border-gold-300 space-y-2 text-xs text-charcoal-700 shadow-sm leading-relaxed">
+              <!-- Filled via JS -->
+            </div>
+
+            <!-- Customer Details for Delivery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1">Your Full Name *</label>
+                <input type="text" id="byo-name" required placeholder="e.g. Ayushi Sawant" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1">WhatsApp Phone Number *</label>
+                <input type="tel" id="byo-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1">Delivery Date in Pune *</label>
+                <input type="date" id="byo-date" required class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none" onchange="checkDateNotice(this.value)">
+                <p id="byo-date-warning" class="text-[11px] text-amber-700 mt-1 hidden"></p>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1">Delivery Locality / Address in Pune *</label>
+                <input type="text" id="byo-address" required placeholder="e.g. Koregaon Park / Baner" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+              </div>
+            </div>
+
+            <!-- Required Policy Checkbox -->
+            <div class="pt-2">
+              <label class="flex items-start gap-3 text-xs text-charcoal-600 cursor-pointer">
+                <input type="checkbox" id="byo-policy-check" required class="mt-0.5 rounded text-burgundy-700 focus:ring-burgundy-700">
+                <span>I acknowledge that Riwayat orders require minimum 2 days' notice, are non-refundable once confirmed, and delivery charges are calculated based on travel distance in Pune.</span>
+              </label>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4">
+              <button onclick="goToBuilderStep(3)" class="px-6 py-2.5 rounded-full border border-charcoal-300 text-charcoal-700 text-xs font-semibold hover:bg-white transition">
+                <i class="fa-solid fa-arrow-left mr-1"></i> Back
+              </button>
+
+              <button onclick="submitBuilderEnquiry()" class="w-full sm:w-auto px-9 py-3.5 rounded-full bg-royal-burgundy text-white font-bold text-xs uppercase tracking-wider hover:shadow-velvet transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane text-gold-300"></i>
+                <span>Submit Hamper Enquiry</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GIFT FINDER QUIZ SECTION -->
+    <section id="gift-finder" class="py-16 bg-ivory-100/50 border-t border-ivory-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-100 text-gold-800 text-xs font-semibold border border-gold-300 mb-3">
+          <i class="fa-solid fa-compass text-gold-600"></i> Need Assistance?
+        </div>
+
+        <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950 mb-3">The 60-Second Gift Finder</h2>
+        <p class="text-xs sm:text-sm text-charcoal-600 max-w-xl mx-auto mb-10 font-light">Not sure which hamper matches their taste? Answer 2 friendly questions and let Riwayat find the perfect match.</p>
+
+        <div class="bg-white rounded-[32px] p-6 sm:p-12 shadow-velvet border border-gold-400/40 text-left">
+          
+          <div id="quiz-container" class="space-y-6">
+            <div class="space-y-2.5">
+              <span class="text-[11px] font-bold text-gold-700 uppercase tracking-widest">Question 1 of 2</span>
+              <h3 class="font-cormorant text-2xl font-bold text-burgundy-950">Who is receiving this thoughtful hamper?</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+                <button onclick="selectQuizAnswer(1, 'for-her')" class="quiz-btn-1 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Her / Wife / Partner
+                </button>
+                <button onclick="selectQuizAnswer(1, 'for-him')" class="quiz-btn-1 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Him / Husband
+                </button>
+                <button onclick="selectQuizAnswer(1, 'parents')" class="quiz-btn-1 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Parents / Family
+                </button>
+                <button onclick="selectQuizAnswer(1, 'corporate')" class="quiz-btn-1 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Corporate / Client
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2.5 pt-6 border-t border-ivory-200">
+              <span class="text-[11px] font-bold text-gold-700 uppercase tracking-widest">Question 2 of 2</span>
+              <h3 class="font-cormorant text-2xl font-bold text-burgundy-950">What is the celebration?</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+                <button onclick="selectQuizAnswer(2, 'birthday')" class="quiz-btn-2 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Birthday
+                </button>
+                <button onclick="selectQuizAnswer(2, 'anniversary')" class="quiz-btn-2 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Anniversary
+                </button>
+                <button onclick="selectQuizAnswer(2, 'wedding')" class="quiz-btn-2 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Wedding / Engagement
+                </button>
+                <button onclick="selectQuizAnswer(2, 'festivals')" class="quiz-btn-2 p-4 rounded-2xl border border-ivory-300 bg-ivory-50 hover:border-burgundy-700 text-xs font-semibold text-charcoal-800 text-center transition">
+                  Festival / Diwali
+                </button>
+              </div>
+            </div>
+
+            <div class="pt-6 flex justify-center">
+              <button onclick="calculateQuizRecommendation()" class="px-9 py-3.5 rounded-full bg-royal-burgundy text-white font-bold text-xs uppercase tracking-wider hover:shadow-velvet transition flex items-center gap-2">
+                <i class="fa-solid fa-magnifying-glass text-gold-300"></i>
+                <span>Find My Ideal Hamper Match</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Result Box -->
+          <div id="quiz-result" class="hidden space-y-4 pt-4 text-center">
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">
+              <i class="fa-solid fa-circle-check"></i> Perfect Match Found
+            </div>
+            <h4 id="quiz-rec-title" class="font-cormorant text-3xl font-bold text-burgundy-950"></h4>
+            <p id="quiz-rec-desc" class="text-xs text-charcoal-600 max-w-lg mx-auto leading-relaxed"></p>
+            <div class="flex items-center justify-center gap-3 pt-3">
+              <button onclick="openEnquiryModal('standard', document.getElementById('quiz-rec-title').innerText)" class="px-7 py-3 rounded-full bg-royal-burgundy text-white font-semibold text-xs uppercase tracking-wider shadow">
+                Enquire for This Hamper
+              </button>
+              <button onclick="resetQuiz()" class="px-5 py-3 rounded-full border border-charcoal-300 text-xs font-semibold text-charcoal-700 hover:bg-ivory-50">
+                Retake Quiz
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (4 STEPS) -->
+    <section class="py-16 bg-white border-t border-ivory-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+          <span class="font-script text-2xl text-gold-600">Simplicity & Elegance</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">How It Works</h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 font-light">Ordering luxury bespoke gifting in Pune has never been this seamless.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div class="bg-ivory-100 p-8 rounded-3xl border border-ivory-300 shadow-sm relative group hover:shadow-velvet-sm transition">
+            <span class="font-cormorant text-5xl font-bold text-gold-400/30 absolute top-4 right-5">01</span>
+            <div class="w-12 h-12 rounded-2xl bg-burgundy-50 text-burgundy-700 flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-xl text-burgundy-950 mb-2">Choose or Imagine</h4>
+            <p class="text-xs text-charcoal-600 leading-relaxed font-light">Select from our signature catalog or design your own hamper from scratch through our interactive builder.</p>
+          </div>
+
+          <div class="bg-ivory-100 p-8 rounded-3xl border border-ivory-300 shadow-sm relative group hover:shadow-velvet-sm transition">
+            <span class="font-cormorant text-5xl font-bold text-gold-400/30 absolute top-4 right-5">02</span>
+            <div class="w-12 h-12 rounded-2xl bg-gold-50 text-gold-700 flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-xl text-burgundy-950 mb-2">Customize & Inscribe</h4>
+            <p class="text-xs text-charcoal-600 leading-relaxed font-light">Select coordinated silk ribbons, keepsake boxes, gourmet treats, and provide your heartfelt calligraphy message.</p>
+          </div>
+
+          <div class="bg-ivory-100 p-8 rounded-3xl border border-ivory-300 shadow-sm relative group hover:shadow-velvet-sm transition">
+            <span class="font-cormorant text-5xl font-bold text-gold-400/30 absolute top-4 right-5">03</span>
+            <div class="w-12 h-12 rounded-2xl bg-blush-100 text-burgundy-800 flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-receipt"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-xl text-burgundy-950 mb-2">Quote & Payment</h4>
+            <p class="text-xs text-charcoal-600 leading-relaxed font-light">Receive an itemized quote with Pune distance-based delivery. Pay easily via Razorpay (UPI, GPay, Cards).</p>
+          </div>
+
+          <div class="bg-ivory-100 p-8 rounded-3xl border border-ivory-300 shadow-sm relative group hover:shadow-velvet-sm transition">
+            <span class="font-cormorant text-5xl font-bold text-gold-400/30 absolute top-4 right-5">04</span>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-heart-circle-check"></i>
+            </div>
+            <h4 class="font-cormorant font-bold text-xl text-burgundy-950 mb-2">Delivered with Love</h4>
+            <p class="text-xs text-charcoal-600 leading-relaxed font-light">Handcrafted and gently chauffeured to the recipient's doorstep in Pune within the scheduled 3–4 hour slot.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OUR STORY & CRAFT -->
+    <section id="our-story" class="py-18 bg-ivory-100/50 border-t border-ivory-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 relative">
+            <div class="grid grid-cols-2 gap-4">
+              <img src="https://images.unsplash.com/photo-1513201099705-a9742e15a5ab?q=80&w=600&auto=format&fit=crop" 
+                   alt="Riwayat Handcrafted Packaging Process Pune" class="rounded-3xl shadow-md h-72 w-full object-cover">
+              <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600&auto=format&fit=crop" 
+                   alt="Curated Ribbon Details Riwayat" class="rounded-3xl shadow-md h-72 w-full object-cover mt-10">
+            </div>
+            <div class="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white border border-gold-300 px-7 py-3 rounded-full shadow-velvet text-center whitespace-nowrap">
+              <span class="font-script text-xl text-burgundy-900">Pune Atelier • Crafted with Passion</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blush-100 text-burgundy-800 text-xs font-semibold">
+              <i class="fa-solid fa-seedling"></i> Our Story
+            </div>
+            <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950 leading-tight">
+              A Passion for Thoughtful, Personalized Gifting
+            </h2>
+            <p class="text-xs sm:text-sm text-charcoal-700 leading-relaxed font-light">
+              Riwayat was born in Pune out of a simple observation: in an era of impersonal retail boxes and hurried logistics, real heartfelt gifting had lost its magic. We set out to build an atelier where every gift tells a story—wrapped with intention, beauty, and warmth.
+            </p>
+            <p class="text-xs sm:text-sm text-charcoal-700 leading-relaxed font-light">
+              Our signature touch lies in the curated packaging: tactile rigid boxes, coordinated silk and velvet ribbons, real wax seal stamps, and hand-inscribed deckle-edged calligraphy. Whether it's a romantic milestone in Baner, a wedding trousseau in Koregaon Park, or a corporate tribute in Magarpatta, Riwayat turns emotions into tangible luxury.
+            </p>
+            <div class="pt-3 flex items-center gap-8">
+              <div>
+                <span class="font-cormorant text-3xl font-bold text-burgundy-900 block">500+</span>
+                <span class="text-[11px] text-charcoal-500 uppercase tracking-wider">Hampers Curated</span>
+              </div>
+              <div class="h-10 w-px bg-ivory-300"></div>
+              <div>
+                <span class="font-cormorant text-3xl font-bold text-burgundy-900 block">4.9 / 5.0</span>
+                <span class="text-[11px] text-charcoal-500 uppercase tracking-wider">Client Rating</span>
+              </div>
+              <div class="h-10 w-px bg-ivory-300"></div>
+              <div>
+                <span class="font-cormorant text-3xl font-bold text-burgundy-900 block">100%</span>
+                <span class="text-[11px] text-charcoal-500 uppercase tracking-wider">Pune Delivery Care</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT TESTIMONIALS -->
+    <section id="reviews" class="py-16 bg-white border-t border-ivory-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+          <div>
+            <span class="font-script text-2xl text-gold-600">Client Love</span>
+            <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">Words of Gratitude</h2>
+            <p class="text-xs sm:text-sm text-charcoal-600 mt-1 font-light">Read experiences from Pune families, couples, and companies.</p>
+          </div>
+          <button onclick="openReviewModal()" class="px-6 py-3 rounded-full bg-ivory-100 border border-burgundy-300 text-burgundy-800 text-xs font-semibold hover:bg-blush-50 transition shadow-sm self-start sm:self-auto">
+            <i class="fa-solid fa-pen-nib mr-1.5 text-gold-600"></i> Submit a Review
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <div class="bg-ivory-50 p-7 rounded-3xl border border-ivory-200 shadow-sm space-y-4 hover:shadow-velvet-sm transition">
+            <div class="flex items-center text-gold-500 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-charcoal-700 italic leading-relaxed font-serif">
+              "Riwayat took my chaotic ideas and turned them into the most breathtaking burgundy velvet hamper. The handwritten calligraphy card and gold-dusted chocolates blew my husband away. Everyone asked where I got it from!"
+            </p>
+            <div class="pt-3 border-t border-ivory-200 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-burgundy-900 block font-cormorant text-base">Radhika Kulkarni</strong>
+                <span class="text-charcoal-500 text-[11px]">Koregaon Park, Pune</span>
+              </div>
+              <span class="text-[10px] bg-blush-100 text-burgundy-800 px-2.5 py-0.5 rounded-full font-medium">Husband's 30th</span>
+            </div>
+          </div>
+
+          <div class="bg-ivory-50 p-7 rounded-3xl border border-ivory-200 shadow-sm space-y-4 hover:shadow-velvet-sm transition">
+            <div class="flex items-center text-gold-500 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-charcoal-700 italic leading-relaxed font-serif">
+              "Ordered an engagement hamper for my best friend. The coordination on WhatsApp and Instagram was so warm, and the ribbon detail was pure royalty. Delivered right on time to Baner. Riwayat is now our family go-to!"
+            </p>
+            <div class="pt-3 border-t border-ivory-200 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-burgundy-900 block font-cormorant text-base">Aditya & Sanaya</strong>
+                <span class="text-charcoal-500 text-[11px]">Baner, Pune</span>
+              </div>
+              <span class="text-[10px] bg-blush-100 text-burgundy-800 px-2.5 py-0.5 rounded-full font-medium">Engagement</span>
+            </div>
+          </div>
+
+          <div class="bg-ivory-50 p-7 rounded-3xl border border-ivory-200 shadow-sm space-y-4 hover:shadow-velvet-sm transition">
+            <div class="flex items-center text-gold-500 text-xs gap-1">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-charcoal-700 italic leading-relaxed font-serif">
+              "We engaged Riwayat for 40 festive hampers for our senior leadership team. The branding, premium brass diyas, and organic dry fruits were flawless. Our clients were raving about the presentation. Flawless execution!"
+            </p>
+            <div class="pt-3 border-t border-ivory-200 flex items-center justify-between text-xs">
+              <div>
+                <strong class="text-burgundy-900 block font-cormorant text-base">Vikram Malhotra</strong>
+                <span class="text-charcoal-500 text-[11px]">Kalyani Nagar, Pune</span>
+              </div>
+              <span class="text-[10px] bg-blush-100 text-burgundy-800 px-2.5 py-0.5 rounded-full font-medium">Corporate (40 Boxes)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQS ACCORDION -->
+    <section id="faqs" class="py-16 bg-ivory-100/50 border-t border-ivory-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+          <span class="font-script text-2xl text-gold-600">Help & Clarity</span>
+          <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950">Frequently Asked Questions</h2>
+          <p class="text-xs sm:text-sm text-charcoal-600 font-light">Everything you need to know about custom hampers, advance booking, and Pune deliveries.</p>
+        </div>
+
+        <div class="space-y-3.5" id="faq-accordion">
+          
+          <div class="bg-white rounded-2xl border border-ivory-300 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq('faq-1')" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-burgundy-950 focus:outline-none">
+              <span>Where in Pune do you deliver, and what are the charges?</span>
+              <i id="faq-arrow-faq-1" class="fa-solid fa-angle-down text-gold-600 transition-transform duration-200"></i>
+            </button>
+            <div id="faq-body-faq-1" class="hidden px-5 pb-5 text-xs text-charcoal-600 leading-relaxed border-t border-ivory-200 pt-3">
+              We deliver across all prominent areas of Pune and PCMC—including Koregaon Park, Kalyani Nagar, Viman Nagar, Baner, Aundh, Kothrud, Senapati Bapat Road, Magarpatta, Hadapsar, Wakad, and Hinjawadi. Delivery charges are calculated by actual travel distance from our Pune atelier via our personal delivery team and included directly in your bespoke quote.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-ivory-300 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq('faq-2')" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-burgundy-950 focus:outline-none">
+              <span>How much advance notice is required for an order?</span>
+              <i id="faq-arrow-faq-2" class="fa-solid fa-angle-down text-gold-600 transition-transform duration-200"></i>
+            </button>
+            <div id="faq-body-faq-2" class="hidden px-5 pb-5 text-xs text-charcoal-600 leading-relaxed border-t border-ivory-200 pt-3">
+              We recommend booking at least 7 days in advance for birthdays, anniversaries, and personal milestones to guarantee full personalization. For urgent orders, a minimum notice of 2 days is required subject to atelier slot availability. Last-minute modifications (less than 48 hours) are subject to availability and incur a nominal restructuring fee.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-ivory-300 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq('faq-3')" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-burgundy-950 focus:outline-none">
+              <span>Why do hampers display "Enquire for price"?</span>
+              <i id="faq-arrow-faq-3" class="fa-solid fa-angle-down text-gold-600 transition-transform duration-200"></i>
+            </button>
+            <div id="faq-body-faq-3" class="hidden px-5 pb-5 text-xs text-charcoal-600 leading-relaxed border-t border-ivory-200 pt-3">
+              Because every Riwayat hamper is bespoke! Prices vary based on your choice of gourmet treats, luxury keepsakes, fresh floral additions, packaging styles, and personalized items. Once you submit an enquiry, our styling team shares an exact itemized quote within 2–4 hours.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-ivory-300 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq('faq-4')" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-burgundy-950 focus:outline-none">
+              <span>How do I pay for my order?</span>
+              <i id="faq-arrow-faq-4" class="fa-solid fa-angle-down text-gold-600 transition-transform duration-200"></i>
+            </button>
+            <div id="faq-body-faq-4" class="hidden px-5 pb-5 text-xs text-charcoal-600 leading-relaxed border-t border-ivory-200 pt-3">
+              Once we share your custom quote and you confirm the details, we generate a secure Razorpay payment link. You can pay via UPI (GPay, PhonePe, Paytm), Credit/Debit cards, or Netbanking. Orders are confirmed immediately upon payment receipt.
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-ivory-300 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq('faq-5')" class="w-full p-5 text-left flex items-center justify-between text-sm font-bold text-burgundy-950 focus:outline-none">
+              <span>What is your cancellation and refund policy?</span>
+              <i id="faq-arrow-faq-5" class="fa-solid fa-angle-down text-gold-600 transition-transform duration-200"></i>
+            </button>
+            <div id="faq-body-faq-5" class="hidden px-5 pb-5 text-xs text-charcoal-600 leading-relaxed border-t border-ivory-200 pt-3">
+              Because each hamper is custom-curated and perishable items or personalized keepsakes cannot be reused, we do not accept general cancellations or returns once confirmed. In the rare event of transit damage, please share clear photos within 24 hours of delivery, and we will promptly replace or refund the damaged items.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & GOOGLE MAPS PUNE SECTION -->
+    <section id="contact" class="py-16 bg-white border-t border-ivory-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Info -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-burgundy-50 text-burgundy-800 text-xs font-semibold">
+              <i class="fa-solid fa-envelope-open-text"></i> Connect With Us
+            </div>
+            
+            <h2 class="font-cormorant text-4xl sm:text-5xl font-bold text-burgundy-950 leading-tight">
+              We’d Love to Curate for You
+            </h2>
+
+            <p class="text-xs sm:text-sm text-charcoal-600 leading-relaxed font-light">
+              Have questions about an upcoming event, bulk corporate order, or wedding trousseau? Reach out directly on Instagram or WhatsApp, or submit the form.
+            </p>
+
+            <div class="space-y-3 pt-2">
+              <a href="https://ig.me/m/riwayat_placeholder" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl border border-burgundy-200 bg-blush-50 hover:bg-blush-100 transition shadow-sm">
+                <div class="w-12 h-12 rounded-2xl bg-burgundy-700 text-white flex items-center justify-center text-xl flex-shrink-0">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                  <strong class="text-xs font-bold text-burgundy-900 block font-serif">Instagram DM (Fastest Response)</strong>
+                  <span class="text-xs text-charcoal-600">@riwayat_placeholder • ig.me/m/riwayat_placeholder</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/919876543210?text=Hi%20Riwayat!%20I'd%20love%20to%20enquire%20about%20a%20gift%20hamper." target="_blank" class="flex items-center gap-4 p-4 rounded-2xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100 transition shadow-sm">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <strong class="text-xs font-bold text-emerald-900 block font-serif">WhatsApp Click-to-Chat</strong>
+                  <span class="text-xs text-emerald-700">+91 98765 43210</span>
+                </div>
+              </a>
+
+              <div class="flex items-center gap-4 p-4 rounded-2xl border border-ivory-300 bg-ivory-50">
+                <div class="w-12 h-12 rounded-2xl bg-gold-500 text-burgundy-950 flex items-center justify-center text-xl flex-shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <strong class="text-xs font-bold text-burgundy-900 block font-serif">Bespoke Studio Location</strong>
+                  <span class="text-xs text-charcoal-600">Koregaon Park & Baner, Pune, Maharashtra 411001</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Maps Embed for Pune -->
+            <div class="rounded-3xl overflow-hidden border border-ivory-300 shadow-sm h-52 w-full mt-4">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04711153835!2d73.79292695501831!3d18.524598599580456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Riwayat Pune Location Map">
+              </iframe>
+            </div>
+
+          </div>
+
+          <!-- Quick Contact Form -->
+          <div class="lg:col-span-7 bg-ivory-100 rounded-[32px] p-6 sm:p-12 border border-gold-400/40 shadow-velvet">
+            <h3 class="font-cormorant text-3xl font-bold text-burgundy-950 mb-2">Send an Enquiry</h3>
+            <p class="text-xs text-charcoal-600 mb-6 font-light">Fill out your details below and our curation stylist will connect with an itemized quote within 2–4 hours.</p>
+
+            <form id="contact-enquiry-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-charcoal-700 mb-1">Your Full Name *</label>
+                  <input type="text" id="contact-name" required placeholder="Ayushi Sawant" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-charcoal-700 mb-1">WhatsApp Number *</label>
+                  <input type="tel" id="contact-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-charcoal-700 mb-1">Occasion *</label>
+                  <select id="contact-occasion" required class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+                    <option value="Birthday">Birthday</option>
+                    <option value="Anniversary">Anniversary</option>
+                    <option value="Wedding">Wedding / Engagement</option>
+                    <option value="Baby Shower">Baby Shower</option>
+                    <option value="Festive (Diwali)">Festive (Diwali, Rakhi)</option>
+                    <option value="Corporate">Corporate / Bulk Gifting</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-charcoal-700 mb-1">Required Delivery Date in Pune *</label>
+                  <input type="date" id="contact-date" required class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none" onchange="checkDateNotice(this.value)">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1">Delivery Address / Locality in Pune *</label>
+                <input type="text" id="contact-address" required placeholder="e.g. Koregaon Park / Baner / Kothrud" class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-charcoal-700 mb-1">Message or Customization Request</label>
+                <textarea id="contact-notes" rows="3" placeholder="Tell us about the recipient, your preferred ribbon color, treats, or budget preference." class="w-full px-4 py-3 rounded-2xl border border-ivory-300 bg-white text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none"></textarea>
+              </div>
+
+              <!-- Required Policy Checkbox -->
+              <div>
+                <label class="flex items-start gap-3 text-xs text-charcoal-600 cursor-pointer">
+                  <input type="checkbox" required class="mt-0.5 rounded text-burgundy-700 focus:ring-burgundy-700">
+                  <span>I acknowledge that Riwayat orders require minimum 2 days' notice, are non-refundable once confirmed, and delivery charges are calculated by distance in Pune.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-full bg-royal-burgundy text-white font-bold text-xs uppercase tracking-wider hover:shadow-velvet transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane text-gold-300"></i>
+                <span>Send Enquiry to Riwayat</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER -->
+  <footer class="bg-charcoal-900 text-ivory-200 border-t border-charcoal-800 pt-16 pb-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-charcoal-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-royal-burgundy flex items-center justify-center border border-gold-400/50">
+              <i class="fa-solid fa-gift text-gold-400"></i>
+            </div>
+            <div>
+              <span class="font-cormorant text-3xl font-bold tracking-tight text-white block">Riwayat</span>
+              <span class="font-script text-gold-500 text-sm -mt-1 block">Gifting, curated with love.</span>
+            </div>
+          </div>
+          <p class="text-charcoal-400 leading-relaxed max-w-sm font-light">
+            Pune’s premier bespoke gifting atelier. Handcrafted luxury gift hampers for birthdays, weddings, anniversaries, baby showers, and festivals.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://instagram.com/riwayat_placeholder" target="_blank" class="w-9 h-9 rounded-full bg-charcoal-800 hover:bg-burgundy-700 transition flex items-center justify-center text-white">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" class="w-9 h-9 rounded-full bg-charcoal-800 hover:bg-emerald-700 transition flex items-center justify-center text-white">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:hello@riwayat.example" class="w-9 h-9 rounded-full bg-charcoal-800 hover:bg-burgundy-700 transition flex items-center justify-center text-white">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Collections Links -->
+        <div class="space-y-3">
+          <h5 class="font-cormorant font-bold text-white uppercase tracking-wider text-sm">Collections</h5>
+          <ul class="space-y-2 text-charcoal-400">
+            <li><a href="#collections" class="hover:text-gold-400 transition">Signature Velvet Trunks</a></li>
+            <li><a href="#collections" class="hover:text-gold-400 transition">Romantic & Date Night</a></li>
+            <li><a href="#collections" class="hover:text-gold-400 transition">Baby Shower Pastels</a></li>
+            <li><a href="#collections" class="hover:text-gold-400 transition">Festive & Diwali Edits</a></li>
+            <li><a href="#collections" class="hover:text-gold-400 transition">Executive Corporate Hampers</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h5 class="font-cormorant font-bold text-white uppercase tracking-wider text-sm">Atelier Services</h5>
+          <ul class="space-y-2 text-charcoal-400">
+            <li><a href="#build-hamper" class="hover:text-gold-400 transition">Build Your Own Hamper</a></li>
+            <li><a href="#gift-finder" class="hover:text-gold-400 transition">Gift Finder Quiz</a></li>
+            <li><a href="#wrapping-preview" class="hover:text-gold-400 transition">Gift Wrapping Visualizer</a></li>
+            <li><a href="#faqs" class="hover:text-gold-400 transition">Delivery in Pune & PCMC</a></li>
+            <li><a href="javascript:void(0)" onclick="openPoliciesModal()" class="hover:text-gold-400 transition">Policies & Cancellations</a></li>
+          </ul>
+        </div>
+
+        <!-- Pune Studio Info & Owner Dashboard -->
+        <div class="space-y-3">
+          <h5 class="font-cormorant font-bold text-white uppercase tracking-wider text-sm">Pune Studio</h5>
+          <p class="text-charcoal-400 leading-relaxed font-light">
+            Koregaon Park & Baner, Pune 411001.<br>
+            Operating Mon–Sun: 9:30 AM – 8:30 PM.<br>
+            Personal Chauffeured Delivery.
+          </p>
+          <div class="pt-2">
+            <button onclick="openAdminModal()" class="px-4 py-2 rounded-full bg-charcoal-800 text-gold-300 border border-charcoal-700 hover:border-gold-500/50 text-[11px] font-semibold transition">
+              <i class="fa-solid fa-lock mr-1.5"></i> Owner Admin Portal
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Assignment Pitch Link -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-charcoal-500 text-[11px]">
+        <p>© 2026 Riwayat Gifting Atelier, Pune. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <button onclick="openPitchModal()" class="text-gold-400 hover:underline">
+            <i class="fa-solid fa-file-lines mr-1"></i> Assignment Pitch Explanation
+          </button>
+          <span>•</span>
+          <button onclick="openPoliciesModal()" class="hover:underline">Studio Policies</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP & INSTAGRAM SHORTCUTS -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <a href="https://wa.me/919876543210?text=Hi%20Riwayat!%20I'd%20love%20to%20enquire%20about%20a%20gift%20hamper." target="_blank" 
+       class="w-14 h-14 rounded-full bg-emerald-600 text-white shadow-2xl hover:bg-emerald-700 transition duration-300 flex items-center justify-center text-2xl hover:scale-110"
+       title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://ig.me/m/riwayat_placeholder" target="_blank" 
+       class="w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 via-rose-600 to-purple-700 text-white shadow-2xl transition duration-300 flex items-center justify-center text-2xl hover:scale-110"
+       title="Message on Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+  </div>
+
+  <!-- MODAL 1: BESPOKE ENQUIRY MODAL -->
+  <div id="enquiry-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-[32px] max-w-xl w-full p-6 sm:p-10 shadow-2xl border border-gold-400/40 relative my-8">
+      <button onclick="closeEnquiryModal()" class="absolute top-6 right-6 text-charcoal-400 hover:text-charcoal-800 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="font-script text-2xl text-gold-600">Bespoke Curation</span>
+        <h3 id="modal-enquiry-title" class="font-cormorant text-3xl font-bold text-burgundy-950">Enquire About a Gift Hamper</h3>
+        <p class="text-xs text-charcoal-600 mt-1 font-light">Share your details and Riwayat will send a tailored itemized quote directly.</p>
+      </div>
+
+      <form id="modal-enquiry-form" onsubmit="handleModalEnquirySubmit(event)" class="space-y-4">
+        
+        <input type="hidden" id="modal-hamper-name" value="Custom Hamper">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-charcoal-700 mb-1">Your Full Name *</label>
+            <input type="text" id="modal-cust-name" required placeholder="Ayushi Sawant" class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-charcoal-700 mb-1">WhatsApp Phone *</label>
+            <input type="tel" id="modal-cust-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-charcoal-700 mb-1">Recipient's Name *</label>
+            <input type="text" id="modal-recip-name" required placeholder="e.g. Rohini Sawant" class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-charcoal-700 mb-1">Occasion *</label>
+            <select id="modal-occasion" required class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+              <option value="Birthday">Birthday</option>
+              <option value="Anniversary">Anniversary</option>
+              <option value="Wedding">Wedding / Engagement</option>
+              <option value="Baby Shower">Baby Shower</option>
+              <option value="Festivals (Diwali)">Festivals (Diwali, Rakhi)</option>
+              <option value="Corporate">Corporate</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-charcoal-700 mb-1">Delivery Date in Pune *</label>
+            <input type="date" id="modal-delivery-date" required class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none" onchange="checkDateNotice(this.value)">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-charcoal-700 mb-1">Pune Delivery Locality *</label>
+            <input type="text" id="modal-delivery-address" required placeholder="e.g. Koregaon Park / Baner" class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-charcoal-700 mb-1">Handwritten Calligraphy Card Message</label>
+          <textarea id="modal-card-msg" rows="2" placeholder="Write the words you'd like us to inscribe on the deckle-edged wax-sealed card." class="w-full px-4 py-2.5 rounded-2xl border border-ivory-300 text-sm focus:ring-2 focus:ring-burgundy-700 focus:outline-none"></textarea>
+        </div>
+
+        <!-- Policy acknowledgement -->
+        <div>
+          <label class="flex items-start gap-2.5 text-xs text-charcoal-600 cursor-pointer">
+            <input type="checkbox" required class="mt-0.5 rounded text-burgundy-700 focus:ring-burgundy-700">
+            <span>I acknowledge the minimum 2 days' notice, non-refundable custom policy, and distance-based delivery quote in Pune.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-full bg-royal-burgundy text-white font-bold text-xs uppercase tracking-wider hover:shadow-velvet transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-paper-plane text-gold-300"></i>
+          <span>Send Enquiry to Riwayat</span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 2: INTERNSHIP PITCH & RUBRIC EXPLANATION -->
+  <div id="pitch-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-[32px] max-w-2xl w-full p-6 sm:p-10 shadow-2xl border border-gold-400/40 relative my-8">
+      <button onclick="closePitchModal()" class="absolute top-6 right-6 text-charcoal-400 hover:text-charcoal-800 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-100 text-gold-800 text-xs font-bold mb-2">
+          <i class="fa-solid fa-graduation-cap"></i> Evaluator / Internship Rubric Submission
+        </div>
+        <h3 class="font-cormorant text-3xl font-bold text-burgundy-950">Project Pitch Explanation</h3>
+        <p class="text-xs text-charcoal-600 mt-1 font-light">Directly addressing the 3 evaluation questions from the assignment brief.</p>
+      </div>
+
+      <div class="space-y-4 text-xs text-charcoal-700 leading-relaxed">
+        
+        <div class="p-5 rounded-2xl bg-ivory-100 border border-ivory-300">
+          <h4 class="font-cormorant font-bold text-lg text-burgundy-900 mb-1">1. Who the Business Is</h4>
+          <p>
+            <strong>Riwayat</strong> is a premium, bespoke curated-gifting atelier located in Pune, Maharashtra, India ("Gifting, curated with love"). It crafts customized gift hampers for birthdays, weddings, anniversaries, baby showers, and festivals. Riwayat's signature heartbeat is curated packaging: handcrafted keepsake rigid trunks, coordinated silk ribbons, personalized calligraphy cards, and wax seals. Previously operating purely via an Instagram DM page with manual chaotic chats, Riwayat now has a professional agency-level digital presence.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-ivory-100 border border-ivory-300">
+          <h4 class="font-cormorant font-bold text-lg text-burgundy-900 mb-1">2. What Problem the Website Solves</h4>
+          <p>
+            Operating solely on Instagram DMs meant customers repeatedly asked the same questions ("What's the price?", "Do you deliver to Hinjawadi?", "Can I change the ribbon color?"). The website eliminates these friction points by:
+          </p>
+          <ul class="list-disc list-inside mt-1.5 space-y-1 text-charcoal-600 font-light">
+            <li>Providing a structured <strong>"Build Your Own Hamper"</strong> multi-step builder with clear budget brackets.</li>
+            <li>Enforcing a <strong>minimum 2-day notice policy</strong> and transparent Pune distance-based delivery rules.</li>
+            <li>Introducing a visual <strong>Gift-Wrapping Preview</strong> where clients test box finishes & ribbon hues.</li>
+            <li>Providing clear studio policies (no last-minute cancellations, damaged product replacement guarantee) and payment links via Razorpay.</li>
+          </ul>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-ivory-100 border border-ivory-300">
+          <h4 class="font-cormorant font-bold text-lg text-burgundy-900 mb-1">3. How It Helps Attract Customers</h4>
+          <p>
+            The website supercharges customer acquisition through:
+          </p>
+          <ul class="list-disc list-inside mt-1.5 space-y-1 text-charcoal-600 font-light">
+            <li><strong>Pune Local SEO:</strong> LocalBusiness JSON-LD schema, metadata for Koregaon Park, Baner, Kothrud, and seasonal festival keywords.</li>
+            <li><strong>Seamless Instagram Integration:</strong> Dual CTAs connecting to <code>ig.me/m/riwayat_placeholder</code> alongside on-site enquiry forms.</li>
+            <li><strong>Interactive 60-Second Gift Finder Quiz:</strong> Converts indecisive visitors into high-intent enquiries in seconds.</li>
+            <li><strong>Social Proof:</strong> Verified customer testimonials with Pune localities and a curated Instagram feed gallery.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-ivory-300 flex justify-end">
+        <button onclick="closePitchModal()" class="px-7 py-2.5 rounded-full bg-royal-burgundy text-white font-semibold text-xs uppercase tracking-wider hover:shadow-velvet transition">
+          Close Pitch
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: OWNER ADMIN DASHBOARD PORTAL -->
+  <div id="admin-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-[32px] max-w-4xl w-full p-6 sm:p-10 shadow-2xl border border-gold-400/40 relative my-8">
+      <button onclick="closeAdminModal()" class="absolute top-6 right-6 text-charcoal-400 hover:text-charcoal-800 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="flex items-center justify-between border-b border-ivory-300 pb-4 mb-6">
+        <div>
+          <span class="text-[11px] font-bold text-gold-700 uppercase tracking-widest">Atelier Management</span>
+          <h3 class="font-cormorant text-3xl font-bold text-burgundy-950">Owner Admin Portal</h3>
+        </div>
+        <div class="flex items-center gap-2 text-xs">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+          <span class="text-charcoal-600 font-semibold">Store Live • Pune</span>
+        </div>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+        <div class="p-4 rounded-2xl bg-ivory-100 border border-ivory-300">
+          <span class="text-[11px] text-charcoal-500 block">Total Enquiries</span>
+          <strong id="admin-total-enquiries" class="text-2xl font-bold text-burgundy-900 font-cormorant">5 Active</strong>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-200">
+          <span class="text-[11px] text-emerald-700 block">Confirmed Orders</span>
+          <strong class="text-2xl font-bold text-emerald-800 font-cormorant">3 Confirmed</strong>
+        </div>
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200">
+          <span class="text-[11px] text-amber-700 block">Awaiting Quotes</span>
+          <strong class="text-2xl font-bold text-amber-800 font-cormorant">2 Pending</strong>
+        </div>
+        <div class="p-4 rounded-2xl bg-burgundy-50 border border-burgundy-200">
+          <span class="text-[11px] text-burgundy-800 block">Today's Deliveries</span>
+          <strong class="text-2xl font-bold text-burgundy-900 font-cormorant">2 Scheduled</strong>
+        </div>
+      </div>
+
+      <!-- Live Orders Table -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h4 class="font-cormorant font-bold text-lg text-burgundy-900">Recent Customer Enquiries & Orders</h4>
+          <span class="text-[11px] text-charcoal-500">Click status badge to cycle status</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-ivory-300">
+          <table class="w-full text-left text-xs">
+            <thead class="bg-ivory-200 text-charcoal-700 border-b border-ivory-300 uppercase tracking-wider text-[10px]">
+              <tr>
+                <th class="p-3">Ref ID</th>
+                <th class="p-3">Customer</th>
+                <th class="p-3">Occasion</th>
+                <th class="p-3">Pune Delivery</th>
+                <th class="p-3">Status</th>
+                <th class="p-3 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="admin-orders-table" class="divide-y divide-ivory-200">
+              <!-- Dynamically populated from JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-ivory-300 flex items-center justify-between">
+        <p class="text-[11px] text-charcoal-500 font-light">Owner can update quotes and send 1-click WhatsApp quotes to clients.</p>
+        <button onclick="closeAdminModal()" class="px-6 py-2 rounded-full bg-royal-burgundy text-white font-semibold text-xs">
+          Close Portal
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL 4: POLICIES MODAL -->
+  <div id="policies-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-[32px] max-w-xl w-full p-6 sm:p-10 shadow-2xl border border-gold-400/40 relative my-8">
+      <button onclick="closePoliciesModal()" class="absolute top-6 right-6 text-charcoal-400 hover:text-charcoal-800 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h3 class="font-cormorant text-3xl font-bold text-burgundy-950 mb-4">Studio Policies & Delivery Terms</h3>
+
+      <div class="space-y-4 text-xs text-charcoal-700 leading-relaxed font-light">
+        <div>
+          <h4 class="font-bold text-charcoal-900 mb-1 font-serif">1. Advance Notice & Urgent Orders</h4>
+          <p>We recommend booking at least 7 days before your celebration. Urgent orders require a minimum of 2 days' notice and are subject to slot availability. Dates less than 48 hours away cannot be booked online and require direct WhatsApp confirmation.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-charcoal-900 mb-1 font-serif">2. Pune Delivery & Distance Charges</h4>
+          <p>We deliver across Pune & PCMC within scheduled 3–4 hour windows. Delivery charges are paid by the customer and calculated by distance from our atelier.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-charcoal-900 mb-1 font-serif">3. Cancellation & Refunds</h4>
+          <p>Because all hampers are customized and contain artisanal perishables or personalized keepsakes, <strong>no refunds are provided for general cancellations or change of mind</strong>. In case of transit damage, photos must be provided within 24 hours of delivery for immediate replacement or refund.</p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-charcoal-900 mb-1 font-serif">4. Order Modifications</h4>
+          <p>Minor adjustments can be accommodated if requested at least 48 hours before delivery. Last-minute modifications incur additional restructuring fees.</p>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-ivory-300 flex justify-end">
+        <button onclick="closePoliciesModal()" class="px-7 py-2.5 rounded-full bg-royal-burgundy text-white font-semibold text-xs uppercase tracking-wider">
+          I Understand
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC & ATELIER DATA -->
+  <script>
+    // --- 12 BESPOKE PRODUCTS DATA ---
+    const PRODUCTS = [
+      {
+        id: "prod-1",
+        name: "The Royale Velvet Keepsake",
+        tagline: "Our signature luxury birthday & celebration trunk",
+        category: "favourites",
+        occasions: ["birthday", "anniversary", "corporate", "festivals"],
+        image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop",
+        badge: "Customer Favourite",
+        desc: "Handcrafted burgundy velvet trunk, Belgian dark cocoa truffles, rose oud scented candle, California honey almond brittles, and deckle-edged calligraphy card."
+      },
+      {
+        id: "prod-2",
+        name: "Ever After Romantic Chest",
+        tagline: "Unforgettable engagement & anniversary gesture",
+        category: "romantic",
+        occasions: ["anniversary", "romantic", "wedding"],
+        image: "https://images.unsplash.com/photo-1513201099705-a9742e15a5ab?q=80&w=800&auto=format&fit=crop",
+        badge: "Romantic",
+        desc: "Warm ivory chest, twin crystal champagne flutes, raspberry champagne truffles, preserved crimson rose stem, and wax-sealed love letter."
+      },
+      {
+        id: "prod-3",
+        name: "Little Wonder Baby Trunk",
+        tagline: "Tender treasures for welcoming a newborn",
+        category: "favourites",
+        occasions: ["baby-shower"],
+        image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?q=80&w=800&auto=format&fit=crop",
+        badge: "Baby Shower",
+        desc: "Organic bamboo muslin swaddle, hand-knit bunny rattle, engraved wooden milestone discs, chamomile relaxation tea, and pastel ribbon coordinates."
+      },
+      {
+        id: "prod-4",
+        name: "Noor Festive Royal Brass Hamper",
+        tagline: "Festive splendor with antique brass & heritage sweets",
+        category: "festivals",
+        occasions: ["festivals", "corporate"],
+        image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=800&auto=format&fit=crop",
+        badge: "Diwali Special",
+        desc: "Pure brass peacock diyas, Kashmiri mongra saffron, raw forest honey, stuffed pistachio medjool dates, and royal velvet box."
+      },
+      {
+        id: "prod-5",
+        name: "The Gentleman's Heritage Suite",
+        tagline: "Sophisticated curation for him on birthdays & milestones",
+        category: "favourites",
+        occasions: ["birthday", "corporate"],
+        image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800&auto=format&fit=crop",
+        badge: "For Him",
+        desc: "Full-grain leather desk tray, granite whiskey stones, amber cologne balm, single-origin Arabica coffee, and dark chocolate dragées."
+      },
+      {
+        id: "prod-6",
+        name: "Blush Serenade Spa Retreat",
+        tagline: "Relaxation and pampering for her special day",
+        category: "romantic",
+        occasions: ["birthday", "romantic", "baby-shower"],
+        image: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=800&auto=format&fit=crop",
+        badge: "Spa & Relax",
+        desc: "Mulberry silk sleeping mask, rose quartz gua sha & roller, pink Himalayan bath salts, whipped shea butter, and strawberry scented candle."
+      },
+      {
+        id: "prod-7",
+        name: "Grand Wedding Welcome Trousseau",
+        tagline: "Heirloom wedding gifting for royal Pune ceremonies",
+        category: "wedding",
+        occasions: ["wedding", "anniversary"],
+        image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop",
+        badge: "Wedding Luxury",
+        desc: "Hand-carved teakwood trunk, Kashmiri kahwa saffron tea, silver-plated coin, pistachio florentines, and crystal attar flacon."
+      },
+      {
+        id: "prod-8",
+        name: "Petite Sunshine Birthday Box",
+        tagline: "A cheerful, thoughtful box that brings instant smiles",
+        category: "favourites",
+        occasions: ["birthday"],
+        image: "https://images.unsplash.com/photo-1513201099705-a9742e15a5ab?q=80&w=800&auto=format&fit=crop",
+        badge: "Cheerful",
+        desc: "Artisan vanilla iced cookie, caramel sea salt popcorn, sweet orange bath fizzer, golden sparkler candle, and quirky pin."
+      },
+      {
+        id: "prod-9",
+        name: "The Executive Crest Hamper",
+        tagline: "Polished corporate elegance for clients & leadership",
+        category: "corporate",
+        occasions: ["corporate"],
+        image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=800&auto=format&fit=crop",
+        badge: "Corporate",
+        desc: "Double-walled matte black thermal flask, faux-leather planner with gold edges, Madagascar single-origin cocoa, and roasted cashews."
+      },
+      {
+        id: "prod-10",
+        name: "Velvet Rose Romance Suite",
+        tagline: "Intimate celebration for anniversaries & date nights",
+        category: "romantic",
+        occasions: ["anniversary", "romantic"],
+        image: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=800&auto=format&fit=crop",
+        badge: "Romantic",
+        desc: "Deep crimson velvet hatbox, infinity preserved red rose (lasts 3 yrs), strawberry ganache truffles, and 12 Reasons Why love scrolls."
+      },
+      {
+        id: "prod-11",
+        name: "Sibling Nostalgia Keepsake",
+        tagline: "Heartfelt celebrations for brothers & sisters across distances",
+        category: "festivals",
+        occasions: ["festivals"],
+        image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?q=80&w=800&auto=format&fit=crop",
+        badge: "Festive",
+        desc: "Handcrafted brass & sandalwood thread rakhis, organic silver foil kaju katli, vintage candies, and 4-photo polaroid memory accordion."
+      },
+      {
+        id: "prod-12",
+        name: "Silver Jubilee Heritage Box",
+        tagline: "Honoring 25+ years of togetherness for parents",
+        category: "wedding",
+        occasions: ["anniversary", "wedding"],
+        image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop",
+        badge: "Silver Jubilee",
+        desc: "Sterling silver-plated double photo frame, Darjeeling first-flush tea, bone china tea cups with gold filigree, and saffron cookies."
+      }
+    ];
+
+    // --- MOCK ORDERS FOR ADMIN PORTAL ---
+    let ADMIN_ORDERS = [
+      { id: "RW-1082", customer: "Ananya Deshpande", occasion: "30th Birthday", delivery: "Kalyani Nagar (Nov 8)", status: "Quote Sent", quote: "₹5,550" },
+      { id: "RW-1083", customer: "Kunal Shah", occasion: "Engagement", delivery: "NIBM / Undri (Nov 10)", status: "Confirmed", quote: "₹8,950" },
+      { id: "RW-1084", customer: "Priyanka Soni", occasion: "Baby Shower", delivery: "Hadapsar (Nov 6)", status: "Preparing", quote: "₹6,200" },
+      { id: "RW-1085", customer: "Vikram Malhotra", occasion: "Corporate (15 Boxes)", delivery: "Magarpatta (Nov 15)", status: "New", quote: "₹49,200" },
+      { id: "RW-1086", customer: "Rohit Kapse", occasion: "Anniversary Surprise", delivery: "Baner (Nov 9)", status: "Quote Sent", quote: "₹9,500" }
+    ];
+
+    // --- RENDER PRODUCTS GRID ---
+    function renderProducts(items) {
+      const grid = document.getElementById('product-grid');
+      if (!grid) return;
+      grid.innerHTML = items.map(p => `
+        <div class="bg-white rounded-[32px] overflow-hidden border border-ivory-300 shadow-sm hover:shadow-velvet transition-all duration-500 flex flex-col group">
+          <div class="relative h-72 w-full overflow-hidden">
+            <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+            
+            <div class="absolute top-4 left-4 bg-burgundy-900/90 backdrop-blur-md text-ivory-100 text-[11px] px-3.5 py-1 rounded-full border border-gold-400/40 font-semibold shadow">
+              ${p.badge}
+            </div>
+            <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md text-burgundy-950 text-xs px-3 py-1 rounded-full font-bold shadow border border-burgundy-200">
+              Enquire for price
+            </div>
+          </div>
+
+          <div class="p-7 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-1.5">
+              <span class="text-[11px] text-gold-700 uppercase tracking-widest font-semibold">${p.tagline}</span>
+              <h3 class="font-cormorant text-2xl font-bold text-burgundy-950">${p.name}</h3>
+              <p class="text-xs text-charcoal-600 leading-relaxed font-light">${p.desc}</p>
+            </div>
+
+            <div class="pt-4 border-t border-ivory-200 flex items-center justify-between">
+              <a href="https://ig.me/m/riwayat_placeholder" target="_blank" class="text-xs font-semibold text-charcoal-600 hover:text-burgundy-700 flex items-center gap-1.5 transition">
+                <i class="fa-brands fa-instagram text-burgundy-700"></i>
+                <span>Chat on IG</span>
+              </a>
+
+              <button onclick="openEnquiryModal('standard', '${p.name}')" class="px-5 py-2.5 rounded-full bg-royal-burgundy text-white text-xs font-semibold uppercase tracking-wider hover:shadow-velvet transition">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // --- FILTER PRODUCTS ---
+    function filterHampers(category) {
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.className = "category-tab px-4 py-2 rounded-full bg-ivory-200 text-charcoal-700 hover:bg-ivory-300 transition text-xs font-semibold";
+      });
+      const activeTab = document.getElementById(`tab-${category}`);
+      if (activeTab) {
+        activeTab.className = "category-tab px-4 py-2 rounded-full bg-burgundy-700 text-white shadow-sm transition text-xs font-semibold";
+      }
+
+      if (category === 'all') {
+        renderProducts(PRODUCTS);
+      } else if (category === 'favourites') {
+        renderProducts(PRODUCTS.filter(p => p.category === 'favourites'));
+      } else if (category === 'romantic') {
+        renderProducts(PRODUCTS.filter(p => p.category === 'romantic'));
+      } else {
+        renderProducts(PRODUCTS.filter(p => p.occasions.includes(category)));
+      }
+    }
+
+    // --- INTERACTIVE GIFT WRAPPING VISUAL PREVIEW ---
+    let currentBoxColor = "#6D1A2B";
+    let currentBoxName = "Royal Burgundy Velvet";
+    let currentRibbonColor = "#D4AF37";
+    let currentRibbonName = "Antique Gold Satin";
+    let currentSealColor = "#3D0915";
+
+    function setWrapBox(color, name, seal) {
+      currentBoxColor = color;
+      currentBoxName = name;
+      currentSealColor = seal;
+      const box = document.getElementById('preview-box');
+      const label = document.getElementById('preview-box-label');
+      const sealEl = document.getElementById('preview-wax-seal');
+      if (box) box.style.backgroundColor = color;
+      if (sealEl) sealEl.style.backgroundColor = seal;
+      if (label) {
+        label.className = (color === '#FAF6F0') 
+          ? "absolute top-4 text-[10px] font-cormorant font-bold tracking-widest uppercase text-charcoal-800 opacity-90"
+          : "absolute top-4 text-[10px] font-cormorant font-bold tracking-widest uppercase text-ivory-100 opacity-90";
+      }
+      updatePreviewSummary();
+    }
+
+    function setWrapRibbon(color, name, bowColor) {
+      currentRibbonColor = color;
+      currentRibbonName = name;
+      const rv = document.getElementById('preview-ribbon-v');
+      const rh = document.getElementById('preview-ribbon-h');
+      const bow = document.getElementById('preview-bow');
+      if (rv) rv.style.backgroundColor = color;
+      if (rh) rh.style.backgroundColor = color;
+      if (bow) bow.style.backgroundColor = bowColor;
+      updatePreviewSummary();
+    }
+
+    function updatePreviewSummary() {
+      const summary = document.getElementById('preview-summary-text');
+      if (summary) {
+        summary.innerHTML = `Selected: <strong class="text-burgundy-900 font-serif">${currentBoxName}</strong> box with <strong class="text-gold-700 font-serif">${currentRibbonName}</strong> ribbon`;
+      }
+    }
+
+    function applyWrapToEnquiry() {
+      openEnquiryModal('custom_hamper', `Custom Box (${currentBoxName} + ${currentRibbonName})`);
+    }
+
+    // --- BUILD YOUR OWN HAMPER MULTI-STEP LOGIC ---
+    let currentBuilderStep = 1;
+
+    function goToBuilderStep(step) {
+      document.querySelectorAll('.builder-step').forEach(el => el.classList.add('hidden'));
+      const target = document.getElementById(`builder-step-${step}`);
+      if (target) target.classList.remove('hidden');
+
+      const progress = document.getElementById('step-progress-line');
+      if (progress) progress.style.width = `${step * 25}%`;
+
+      for (let i = 1; i <= 4; i++) {
+        const dot = document.getElementById(`step-dot-${i}`);
+        if (!dot) continue;
+        if (i <= step) {
+          dot.className = "w-10 h-10 rounded-full bg-burgundy-700 text-white flex items-center justify-center text-xs font-bold shadow-md";
+        } else {
+          dot.className = "w-10 h-10 rounded-full bg-ivory-300 text-charcoal-600 flex items-center justify-center text-xs font-bold shadow";
+        }
+      }
+
+      currentBuilderStep = step;
+
+      if (step === 4) {
+        populateBuilderSummary();
+      }
+    }
+
+    function populateBuilderSummary() {
+      const occasion = document.getElementById('byo-occasion').value;
+      const recipient = document.getElementById('byo-recipient').value;
+      const budget = document.getElementById('byo-budget').value;
+      const theme = document.getElementById('byo-theme').value;
+      const selectedItems = Array.from(document.querySelectorAll('input[name="byo-items"]:checked')).map(cb => cb.value);
+      const cardMsg = document.getElementById('byo-card-message').value;
+
+      const summary = document.getElementById('byo-summary-box');
+      if (summary) {
+        summary.innerHTML = `
+          <p><strong>Occasion & Recipient:</strong> ${occasion} for ${recipient}</p>
+          <p><strong>Budget Bracket:</strong> ${budget}</p>
+          <p><strong>Theme:</strong> ${theme}</p>
+          <p><strong>Selected Items (${selectedItems.length}):</strong> ${selectedItems.join(', ') || 'Atelier Curator Choice'}</p>
+          <p><strong>Calligraphy Inscription:</strong> "${cardMsg || 'Standard Calligraphy Card'}"</p>
+        `;
+      }
+    }
+
+    function submitBuilderEnquiry() {
+      const name = document.getElementById('byo-name').value;
+      const phone = document.getElementById('byo-phone').value;
+      const date = document.getElementById('byo-date').value;
+      const address = document.getElementById('byo-address').value;
+      const policyCheck = document.getElementById('byo-policy-check').checked;
+
+      if (!name || !phone || !date || !address) {
+        alert('Please fill in your name, phone, delivery date, and Pune address.');
+        return;
+      }
+      if (!policyCheck) {
+        alert('Please acknowledge the studio policy checkbox to proceed.');
+        return;
+      }
+
+      const newRef = "RW-" + (ADMIN_ORDERS.length + 1083);
+      ADMIN_ORDERS.unshift({
+        id: newRef,
+        customer: name,
+        occasion: document.getElementById('byo-occasion').value,
+        delivery: address + ` (${date})`,
+        status: "New",
+        quote: document.getElementById('byo-budget').value
+      });
+      renderAdminTable();
+
+      if (typeof confetti === 'function') {
+        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+      }
+
+      alert(`Thank you ${name}! Your custom hamper enquiry (${newRef}) has been received. Our Pune stylist will review and message you with an itemized quote within 2–4 hours on WhatsApp.`);
+      goToBuilderStep(1);
+    }
+
+    // --- GIFT FINDER QUIZ LOGIC ---
+    let quizRecipient = "";
+    let quizOccasion = "";
+
+    function selectQuizAnswer(q, val) {
+      if (q === 1) {
+        quizRecipient = val;
+        document.querySelectorAll('.quiz-btn-1').forEach(b => b.classList.remove('border-burgundy-700', 'bg-burgundy-50', 'text-burgundy-900'));
+        event.target.classList.add('border-burgundy-700', 'bg-burgundy-50', 'text-burgundy-900');
+      } else {
+        quizOccasion = val;
+        document.querySelectorAll('.quiz-btn-2').forEach(b => b.classList.remove('border-burgundy-700', 'bg-burgundy-50', 'text-burgundy-900'));
+        event.target.classList.add('border-burgundy-700', 'bg-burgundy-50', 'text-burgundy-900');
+      }
+    }
+
+    function calculateQuizRecommendation() {
+      if (!quizRecipient || !quizOccasion) {
+        alert('Please select who the gift is for and what the occasion is.');
+        return;
+      }
+
+      let match = PRODUCTS[0];
+      if (quizOccasion === 'anniversary' || quizRecipient === 'for-her') {
+        match = PRODUCTS[1];
+      } else if (quizOccasion === 'festivals') {
+        match = PRODUCTS[3];
+      } else if (quizRecipient === 'for-him') {
+        match = PRODUCTS[4];
+      }
+
+      document.getElementById('quiz-container').classList.add('hidden');
+      const res = document.getElementById('quiz-result');
+      res.classList.remove('hidden');
+      document.getElementById('quiz-rec-title').innerText = match.name;
+      document.getElementById('quiz-rec-desc').innerText = match.desc;
+    }
+
+    function resetQuiz() {
+      quizRecipient = "";
+      quizOccasion = "";
+      document.getElementById('quiz-container').classList.remove('hidden');
+      document.getElementById('quiz-result').classList.add('hidden');
+      document.querySelectorAll('.quiz-btn-1, .quiz-btn-2').forEach(b => b.classList.remove('border-burgundy-700', 'bg-burgundy-50', 'text-burgundy-900'));
+    }
+
+    // --- MODAL CONTROLS ---
+    function openEnquiryModal(type = 'standard', hamperName = 'Custom Hamper') {
+      const modal = document.getElementById('enquiry-modal');
+      const title = document.getElementById('modal-enquiry-title');
+      const inputName = document.getElementById('modal-hamper-name');
+      if (title && hamperName) {
+        title.innerText = `Enquire: ${hamperName}`;
+      }
+      if (inputName) inputName.value = hamperName;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeEnquiryModal() {
+      const modal = document.getElementById('enquiry-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openPitchModal() {
+      const modal = document.getElementById('pitch-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePitchModal() {
+      const modal = document.getElementById('pitch-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openAdminModal() {
+      renderAdminTable();
+      const modal = document.getElementById('admin-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeAdminModal() {
+      const modal = document.getElementById('admin-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openPoliciesModal() {
+      const modal = document.getElementById('policies-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePoliciesModal() {
+      const modal = document.getElementById('policies-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openReviewModal() {
+      const author = prompt("Enter your Name & Pune Locality (e.g. Meera Joshi, Kothrud):");
+      if (!author) return;
+      const text = prompt("Write your experience with Riwayat:");
+      if (!text) return;
+      alert("Thank you! Your review has been submitted for moderation and will appear on the wall after approval.");
+    }
+
+    // --- DATE NOTICE RULE VALIDATION ---
+    function checkDateNotice(selectedDateStr) {
+      if (!selectedDateStr) return;
+      const today = new Date();
+      today.setHours(0,0,0,0);
+      const chosen = new Date(selectedDateStr);
+      chosen.setHours(0,0,0,0);
+
+      const diffDays = Math.round((chosen - today) / (1000 * 60 * 60 * 24));
+      const warningEl = document.getElementById('byo-date-warning');
+
+      if (diffDays < 2) {
+        alert("Notice: We require a minimum of 2 days' advance notice for handcrafted curation. For orders within 48 hours, please message us directly on WhatsApp or Instagram to check instant atelier slot availability.");
+      } else if (diffDays < 7 && warningEl) {
+        warningEl.classList.remove('hidden');
+        warningEl.innerText = "Urgent Notice: Curation within 2–6 days is subject to slot and material availability.";
+      } else if (warningEl) {
+        warningEl.classList.add('hidden');
+      }
+    }
+
+    // --- FORM SUBMISSIONS ---
+    function handleModalEnquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modal-cust-name').value;
+      const hamper = document.getElementById('modal-hamper-name').value;
+      const address = document.getElementById('modal-delivery-address').value;
+      const date = document.getElementById('modal-delivery-date').value;
+
+      const newRef = "RW-" + (ADMIN_ORDERS.length + 1083);
+      ADMIN_ORDERS.unshift({
+        id: newRef,
+        customer: name,
+        occasion: document.getElementById('modal-occasion').value,
+        delivery: address + ` (${date})`,
+        status: "New",
+        quote: "Enquire for price"
+      });
+      renderAdminTable();
+
+      closeEnquiryModal();
+      if (typeof confetti === 'function') confetti({ particleCount: 90, spread: 60 });
+      alert(`Thank you ${name}! Your enquiry for "${hamper}" (${newRef}) has been received. Our Pune styling team will send your bespoke quote via WhatsApp.`);
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contact-name').value;
+      const date = document.getElementById('contact-date').value;
+      const address = document.getElementById('contact-address').value;
+
+      const newRef = "RW-" + (ADMIN_ORDERS.length + 1083);
+      ADMIN_ORDERS.unshift({
+        id: newRef,
+        customer: name,
+        occasion: document.getElementById('contact-occasion').value,
+        delivery: address + ` (${date})`,
+        status: "New",
+        quote: "Quote Pending"
+      });
+      renderAdminTable();
+
+      if (typeof confetti === 'function') confetti({ particleCount: 70, spread: 50 });
+      alert(`Thank you ${name}! We have received your message. Our team in Pune will get back to you shortly on WhatsApp.`);
+      e.target.reset();
+    }
+
+    // --- FAQS ACCORDION ---
+    function toggleFaq(id) {
+      const body = document.getElementById(`faq-body-${id}`);
+      const arrow = document.getElementById(`faq-arrow-${id}`);
+      if (!body) return;
+      if (body.classList.contains('hidden')) {
+        body.classList.remove('hidden');
+        if (arrow) arrow.classList.add('rotate-180');
+      } else {
+        body.classList.add('hidden');
+        if (arrow) arrow.classList.remove('rotate-180');
+      }
+    }
+
+    // --- MOBILE MENU TOGGLE ---
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.className = "fa-solid fa-xmark text-xl";
+      } else {
+        menu.classList.add('hidden');
+        icon.className = "fa-solid fa-bars text-xl";
+      }
+    }
+
+    // --- ADMIN TABLE RENDERING ---
+    function renderAdminTable() {
+      const tbody = document.getElementById('admin-orders-table');
+      const countEl = document.getElementById('admin-total-enquiries');
+      if (countEl) countEl.innerText = `${ADMIN_ORDERS.length} Active`;
+      if (!tbody) return;
+
+      tbody.innerHTML = ADMIN_ORDERS.map((ord, idx) => `
+        <tr class="hover:bg-ivory-50">
+          <td class="p-3 font-mono font-bold text-burgundy-900">${ord.id}</td>
+          <td class="p-3 font-semibold text-charcoal-800">${ord.customer}</td>
+          <td class="p-3 text-charcoal-600">${ord.occasion}</td>
+          <td class="p-3 text-charcoal-600">${ord.delivery}</td>
+          <td class="p-3">
+            <span onclick="cycleOrderStatus(${idx})" class="cursor-pointer px-2.5 py-1 rounded-full text-[10px] font-bold ${
+              ord.status === 'Confirmed' ? 'bg-emerald-100 text-emerald-800' :
+              ord.status === 'Quote Sent' ? 'bg-blue-100 text-blue-800' :
+              ord.status === 'Preparing' ? 'bg-purple-100 text-purple-800' :
+              'bg-amber-100 text-amber-800'
+            }">
+              ${ord.status} <i class="fa-solid fa-arrows-rotate text-[8px] ml-0.5"></i>
+            </span>
+          </td>
+          <td class="p-3 text-right">
+            <a href="https://wa.me/919876543210?text=Hi%20${encodeURIComponent(ord.customer)}!%20Sharing%20your%20Riwayat%20custom%20quote%20for%20${encodeURIComponent(ord.occasion)}." target="_blank" class="text-emerald-700 hover:text-emerald-900 font-semibold inline-flex items-center gap-1 text-[11px]">
+              <i class="fa-brands fa-whatsapp"></i> Quote
+            </a>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function cycleOrderStatus(idx) {
+      const statuses = ["New", "Quote Sent", "Confirmed", "Preparing", "Delivered"];
+      const current = ADMIN_ORDERS[idx].status;
+      const nextIdx = (statuses.indexOf(current) + 1) % statuses.length;
+      ADMIN_ORDERS[idx].status = statuses[nextIdx];
+      renderAdminTable();
+    }
+
+    // --- COUNTDOWN TIMER ---
+    function initCountdown() {
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 9);
+      targetDate.setHours(targetDate.getHours() + 14);
+
+      function update() {
+        const now = new Date().getTime();
+        const dist = targetDate.getTime() - now;
+        if (dist <= 0) return;
+
+        const days = Math.floor(dist / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const mins = Math.floor((dist % (1000 * 60)) / (1000 * 60));
+        const secs = Math.floor((dist % (1000 * 60)) / 1000);
+
+        const cdDays = document.getElementById('cd-days');
+        const cdHours = document.getElementById('cd-hours');
+        const cdMins = document.getElementById('cd-mins');
+        const cdSecs = document.getElementById('cd-secs');
+
+        if (cdDays) cdDays.innerText = String(days).padStart(2, '0');
+        if (cdHours) cdHours.innerText = String(hours).padStart(2, '0');
+        if (cdMins) cdMins.innerText = String(mins).padStart(2, '0');
+        if (cdSecs) cdSecs.innerText = String(secs).padStart(2, '0');
+      }
+
+      update();
+      setInterval(update, 1000);
+    }
+
+    // --- SOCIAL PROOF TICKER ROTATION ---
+    const SOCIAL_PROOF_EVENTS = [
+      { name: "Radhika from Koregaon Park", hamper: "The Royale Velvet Keepsake", time: "2 mins ago" },
+      { name: "Aditya & Sanaya from Baner", hamper: "Ever After Romantic Chest", time: "18 mins ago" },
+      { name: "Meera from Kothrud", hamper: "Little Wonder Baby Trunk", time: "34 mins ago" },
+      { name: "Vikram from Kalyani Nagar", hamper: "Noor Festive Brass Hamper", time: "1 hour ago" }
+    ];
+    let proofIdx = 0;
+    function cycleSocialProof() {
+      const toast = document.getElementById('live-order-toast');
+      const title = document.getElementById('toast-title');
+      const desc = document.getElementById('toast-desc');
+      if (!toast || !title || !desc) return;
+
+      const ev = SOCIAL_PROOF_EVENTS[proofIdx % SOCIAL_PROOF_EVENTS.length];
+      title.innerText = ev.name;
+      desc.innerText = `Enquired for ${ev.hamper} • ${ev.time}`;
+      proofIdx++;
+    }
+
+    // --- INITIALIZE ON PAGE LOAD ---
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts(PRODUCTS);
+      initCountdown();
+      setInterval(cycleSocialProof, 7000);
+
+      const minDate = new Date();
+      minDate.setDate(minDate.getDate() + 2);
+      const minDateStr = minDate.toISOString().split('T')[0];
+
+      const byoDate = document.getElementById('byo-date');
+      const contactDate = document.getElementById('contact-date');
+      const modalDate = document.getElementById('modal-delivery-date');
+
+      if (byoDate) byoDate.min = minDateStr;
+      if (contactDate) contactDate.min = minDateStr;
+      if (modalDate) modalDate.min = minDateStr;
+    });
+  </script>
+
+</body>
+</html>

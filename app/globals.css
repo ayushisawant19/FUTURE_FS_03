@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-script: 'Alex Brush', cursive;
+
+  --color-burgundy: #6D1A2B;
+  --color-gold: #D4AF37;
+  --color-ivory: #FDFBF7;
+  --color-blush: #F5E6E8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #2D2225;
+    background-color: #FDFBF7;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-playfair);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom Scrollbar for Luxury Aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #DEA7AC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A94857;
+}
+
+/* Luxury Card & Texture Utilities */
+.bg-ivory-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FDFBF7 50%, #FAF6F0 100%);
+}
+
+.bg-burgundy-gradient {
+  background: linear-gradient(135deg, #6D1A2B 0%, #521320 60%, #3D0B16 100%);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F1E5B9 0%, #D4AF37 50%, #B88F23 100%);
+}
+
+.gold-border {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #B88F23 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.burgundy-text-gradient {
+  background: linear-gradient(135deg, #8E2E40 0%, #6D1A2B 50%, #3D0B16 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Shimmer for Highlighting */
+.shimmer-badge {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
